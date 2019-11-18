@@ -1,0 +1,49 @@
+.section-pagetop {
+  padding: 45px 0;
+}
+.bg {
+  background-color: #f8f9fa;
+}
+.container {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.title-page {
+  margin-left: 25px;
+  color: #212529;
+}
+h2,
+.h2 {
+  font-size: 2rem;
+}
+.padding-y {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+/* tab panel css */
+
+.list-group-item {
+  background-color: #4ebacb;
+}
+a {
+  color: #ffffff;
+}
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #2983c5d9;
+  border-color: #007bff;
+}
