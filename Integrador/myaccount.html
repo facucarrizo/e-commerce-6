@@ -96,6 +96,7 @@
 
         <!-- container //  -->
       </section>
+      </section>
       <section class="section-content padding-y">
         <div class="">
           <div class="row">
@@ -110,7 +111,7 @@
                   href="#homea"
                   role="tab"
                 >
-                  My profile
+                  Mi Perfil
                 </a>
                 <a
                   class="list-group-item"
@@ -118,7 +119,15 @@
                   href="#profilea"
                   role="tab"
                 >
-                  My wishlist
+                  Guardados
+                </a>
+                <a
+                  class="list-group-item"
+                  data-toggle="list"
+                  href="#orders"
+                  role="tab"
+                >
+                  Mis Compras
                 </a>
                 <!-- <a class="list-group-item" href="#"> My orders</a>
                 <a class="list-group-item" href="#">Settings </a> -->
@@ -142,42 +151,42 @@
                         <div class="text">
                           <strong> Mr. Jackson Someone </strong> <br />
                           myloginname@gmail.com <br />
-                          <a href="#">Edit</a>
+                          <a href="#" class="btn-link"> Editar</a>
                         </div>
                       </figure>
                       <hr />
                       <p>
-                        <i class="fa fa-map-marker text-muted"></i> &nbsp; My
-                        address:
+                        <i class="fa fa-map-marker text-muted"></i> &nbsp; Mis
+                        Direcciones
                         <br />
                         Tashkent city, Street name, Building 123, House 321
                         &nbsp;
-                        <a href="#" class="btn-link"> Edit</a>
+                        <a href="#" class="btn-link"> Editar</a>
                       </p>
 
                       <article class="card-group">
                         <figure class="card bg">
                           <div class="p-3">
                             <h5 class="card-title">38</h5>
-                            <span>Orders</span>
+                            <span>Mis Compras</span>
                           </div>
                         </figure>
                         <figure class="card bg">
                           <div class="p-3">
                             <h5 class="card-title">5</h5>
-                            <span>Wishlists</span>
+                            <span>Guardados</span>
                           </div>
                         </figure>
                         <figure class="card bg">
                           <div class="p-3">
                             <h5 class="card-title">12</h5>
-                            <span>Awaiting delivery</span>
+                            <span>En espera</span>
                           </div>
                         </figure>
                         <figure class="card bg">
                           <div class="p-3">
                             <h5 class="card-title">50</h5>
-                            <span>Delivered items</span>
+                            <span>Items entregados</span>
                           </div>
                         </figure>
                       </article>
@@ -188,7 +197,7 @@
 
                   <article class="card  mb-3">
                     <div class="card-body">
-                      <h5 class="card-title mb-4">Recent orders</h5>
+                      <h5 class="card-title mb-4">Compras recientes</h5>
 
                       <div class="row">
                         <div class="col-md-6">
@@ -263,6 +272,118 @@
                     xcrteHRdevh7eZSLW2qC4QOeihzfuWBI0lCUKo5DtbySDPvAMhgukKoVRmAJAvMiZJpgDYpmbYbOzZdn04v7IaWRSkoLLGy7Ppxf2RrtGfu
                   </h1>
                 </div>
+                <div class="tab-pane" id="orders" role="tabpanel">
+                  <article class="card mb-3">
+                    <div class="card-body">
+                  <div class="card">
+<table class="table table-borderless table-shopping-cart">
+<thead class="text-muted">
+<tr class="small text-uppercase">
+  <th scope="col">Product</th>
+  <th scope="col" width="120">Quantity</th>
+  <th scope="col" width="120">Price</th>
+  <th scope="col" class="text-right" width="200"> </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>
+		<figure class="itemside">
+			<div class="aside"><img src="images/items/1.jpg" class="img-sm"></div>
+			<figcaption class="info">
+				<a href="#" class="title text-dark">Some name of item goes here nice</a>
+				<p class="text-muted small">Size: XL, Color: blue, <br> Brand: Gucci</p>
+			</figcaption>
+		</figure>
+	</td>
+	<td> 
+		<select class="form-control">
+			<option>1</option>
+			<option>2</option>	
+			<option>3</option>	
+			<option>4</option>	
+		</select> 
+	</td>
+	<td> 
+		<div class="price-wrap"> 
+			<var class="price">$1156.00</var> 
+			<small class="text-muted"> $315.20 each </small> 
+		</div> <!-- price-wrap .// -->
+	</td>
+	<td class="text-right"> 
+	<a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a> 
+	<a href="" class="btn btn-light"> Remove</a>
+	</td>
+</tr>
+<tr>
+	<td>
+		<figure class="itemside">
+			<div class="aside"><img src="images/items/2.jpg" class="img-sm"></div>
+			<figcaption class="info">
+				<a href="#" class="title text-dark">Product name  goes here nice</a>
+				<p class="text-muted small">Size: XL, Color: blue, <br> Brand: Gucci</p>
+			</figcaption>
+		</figure>
+	</td>
+	<td> 
+		<select class="form-control">
+			<option>1</option>
+			<option>2</option>	
+			<option>3</option>	
+			<option>4</option>	
+		</select> 
+	</td>
+	<td> 
+		<div class="price-wrap"> 
+			<var class="price">$149.97</var> 
+			<small class="text-muted"> $75.00 each </small>  
+		</div> <!-- price-wrap .// -->
+	</td>
+	<td class="text-right"> 
+	<a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a> 
+	<a href="" class="btn btn-light btn-round"> Remove</a>
+	</td>
+</tr>
+<tr>
+	<td>
+		<figure class="itemside">
+			<div class="aside"><img src="images/items/3.jpg" class="img-sm"></div>
+			<figcaption class="info">
+				<a href="#" class="title text-dark">Another name of some product goes just here</a>
+				<p class="small text-muted">Size: XL, Color: blue,  Brand: Tissot</p>
+			</figcaption>
+		</figure>
+	</td>
+	<td> 
+		<select class="form-control">
+			<option>1</option>
+			<option>2</option>	
+			<option>3</option>	
+		</select> 
+	</td>
+	<td> 
+		<div class="price-wrap"> 
+			<var class="price">$98.00</var> 
+			<small class="text-muted"> $578.00 each</small> 
+		</div> <!-- price-wrap .// -->
+	</td>
+	<td class="text-right"> 
+		<a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a> 
+		<a href="" class="btn btn-light btn-round"> Remove</a>
+	</td>
+</tr>
+</tbody>
+</table>
+<div class="card-body border-top">
+	<!-- <a href="#" class="btn btn-primary float-md-right"> Make Purchase <i class="fa fa-chevron-right"></i> </a> -->
+	<a href="index.html" class="btn btn-light"> <i class="fa fa-chevron-left"></i> Continue shopping </a>
+</div>	
+</div> <!-- card.// -->
+<div class="alert alert-success mt-3">
+	<p class="icontext"><i class="icon text-success fa fa-truck"></i> Free Delivery within 1-2 weeks</p>
+</div>
+                </div>
+                </article>
               </div>
 
               <!-- card.// -->
