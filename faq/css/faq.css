@@ -1,8 +1,31 @@
 #accordionExample {
   width: 100%;
-  margin-bottom: 2%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
 }
-#navbar-faq {
-  margin-top: 2%;
+#navHorizontal {
+  margin-top: 0%;
   width: 100%;
+  background-color: black;
+  font-size: 100%;
+}
+h4 {
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  text-align: center;
+  font-size: 100%;
+}
+#preg {
+    text-decoration: none;
+    color: black;
+}
+#preg:hover {
+  color: red;
+}
+#bottonNavHorizontal {
+  color: white;
+  font-weight: bold;
+}
+#bottonNavHorizontal:hover {
+  color: red;
 }
