@@ -1,0 +1,44 @@
+
+
+    #Todo{
+    width: 50%;
+    height: 100%;
+/* margin: auto;
+padding: auto;
+    
+     background-color: gray; 
+    text-align: center; 
+    */
+    margin-top: 7%;
+    margin-bottom: 10%; margin-left: 25%;
+}
+@media (max-width: 375px) { 
+    #Todo{margin-left: 0% ;
+        width: auto;
+    }}
+h1{
+    text-align: center;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 30px;
+}
+#hola{
+    background-color: black;
+    color: #000;
+    color: white;
+}
+footer{
+    
+    background-color: rgba(128, 128, 128, 0.904);
+}
+img{
+    width: 30px;
+}
+#Redes{
+    font-size: 20px;
+    text-align: center;
+    
+}
+#Copy{
+    text-align: left;
+   padding-left: 5%;
+}
