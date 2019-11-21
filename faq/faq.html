@@ -52,35 +52,45 @@
 </header>
 
 
-<!-- Nav Anidada -->
-<nav id="navbar-faq" class="navbar navbar-light bg-light" class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
- <a class="navbar-brand" href="#">Indice</a>
- <nav class="nav nav-pills flex-column">
-   <a class="nav-link" href="#item-1">SOBRE DE MIS COMPRAS</a>
-   <a class="nav-link" href="#item-2">ACERCA DE MI ENTREGA</a>
-   <a class="nav-link" href="#item-3">CAMBIOS Y DEVOLUCIONES</a>
-   <a class="nav-link" href="#item-4">QUIERO CONTACTARME</a>
- </nav>
-</nav>
+
+<!-- Nav Horizontal -->
+<ul class="nav justify-content-center" id="navHorizontal">
+  <li class="nav-item">
+    <a class="nav-link" href="#item-1" id="bottonNavHorizontal">SOBRE DE MIS COMPRAS</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#item-2" id="bottonNavHorizontal">ACERCA DE MI ENTREGA</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#item-3" id="bottonNavHorizontal">CAMBIOS Y DEVOLUCIONES</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#item-4" id="bottonNavHorizontal">QUIERO CONTACTARME</a>
+  </li>
+</ul>
+
+
+
+
 
 <!-- Collapse PREGUNTAS FRECUENTES -->
-<div class="accordion" id="accordionExample" class="col-sm-12 col-md-9 col-lg-9 col-xl-9">
+<div class="accordion" id="accordionExample">
 
 <!-- COMPRA -->
-<div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-  <h4 id="item-1">Compra</h4>
+<div class="justify-content-center" data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+  <h4 id="item-1">COMPRA</h4>
 </div>
 <!-- 1º Pregunta -->
   <div class="card">
     <div class="card-header" id="preguntaCompra1">
       <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#compra1" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#compra1" aria-expanded="true" aria-controls="collapseOne" id="preg">
           ¿Como hago para comprar?
         </button>
       </h2>
     </div>
 <!-- 1º Respuesta -->
-    <div id="compra1" class="collapse show" aria-labelledby="preguntaCompra1" data-parent="#accordionExample">
+    <div id="compra1" class="collapse" aria-labelledby="preguntaCompra1" data-parent="#accordionExample">
       <div class="card-body">
         Para comprar en CASBUSAGI es muy simple y rápido:
         <ol>
@@ -113,7 +123,7 @@
   <div class="card">
     <div class="card-header" id="preguntaCompra2">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#compra2" aria-expanded="false" aria-controls="collapseTwo">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#compra2" aria-expanded="false" aria-controls="collapseTwo" id="preg">
           ¿Cuáles son los medios de pagos disponibles?
         </button>
       </h2>
@@ -136,7 +146,7 @@
   <div class="card">
     <div class="card-header" id="preguntaCompra3">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#compra3" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#compra3" aria-expanded="false" aria-controls="collapseThree" id="preg">
           ¿Cómo puedo hacer para saber que talle me conviene?
         </button>
       </h2>
@@ -153,7 +163,7 @@
   <div class="card">
     <div class="card-header" id="preguntaCompra4">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#compra4" aria-expanded="false" aria-controls="collapseFour">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#compra4" aria-expanded="false" aria-controls="collapseFour" id="preg">
           ¿Cómo utilizo un cupón de crédito / descuento?
         </button>
       </h2>
@@ -194,13 +204,13 @@
 
 <!-- ENTREGAS -->
 <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-  <h4 id="item-2">Entrega</h4>
+  <h4 id="item-2">ENTREGA</h4>
 </div>
 <!-- 5º Pregunta -->
   <div class="card">
     <div class="card-header" id="preguntaEntrega1">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#entrega1" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#entrega1" aria-expanded="false" aria-controls="collapseThree" id="preg">
           ¿Cómo saber el estado de mi pedido?
         </button>
       </h2>
@@ -217,7 +227,7 @@
   <div class="card">
     <div class="card-header" id="preguntaEntrega2">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#entrega2" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#entrega2" aria-expanded="false" aria-controls="collapseThree" id="preg">
           ¿Cuanto tarda en llegar mi pedido?
         </button>
       </h2>
@@ -234,7 +244,7 @@
   <div class="card">
     <div class="card-header" id="preguntaEntrega3">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#entrega3" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#entrega3" aria-expanded="false" aria-controls="collapseThree" id="preg">
           ¿En qué días y horarios se entregan los pedidos?
         </button>
       </h2>
@@ -251,7 +261,7 @@ Las entregas de pedidos se realizan de lunes a viernes de 8:00 a 20:00, y sábad
   <div class="card">
     <div class="card-header" id="preguntaEntrega4">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#entrega4" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#entrega4" aria-expanded="false" aria-controls="collapseThree" id="preg">
           ¿Puede otra persona recibir mi pedido?
         </button>
       </h2>
@@ -266,13 +276,13 @@ Las entregas de pedidos se realizan de lunes a viernes de 8:00 a 20:00, y sábad
 
 <!-- CAMBIO Y DEVOLUCION -->
 <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-  <h4 id="item-3">Cambios y Devoluciones</h4>
+  <h4 id="item-3">CAMBIOS</h4>
 </div>
 <!-- 9º Pregunta -->
   <div class="card">
     <div class="card-header" id="preguntaCambioDevolucion1">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#cambio1" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#cambio1" aria-expanded="false" aria-controls="collapseThree" id="preg">
           ¿Cómo hago para realizar un cambio?
         </button>
       </h2>
@@ -289,7 +299,7 @@ Las entregas de pedidos se realizan de lunes a viernes de 8:00 a 20:00, y sábad
   <div class="card">
     <div class="card-header" id="preguntaCambioDevolucion2">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#cambio2" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#cambio2" aria-expanded="false" aria-controls="collapseThree" id="preg">
           ¿Cuánto tiempo tengo para realizar un cambio?
         </button>
       </h2>
@@ -304,13 +314,13 @@ Las entregas de pedidos se realizan de lunes a viernes de 8:00 a 20:00, y sábad
 
 <!-- ATENCION AL CLIENTE -->
 <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-  <h4 id="item-4">Atencion al Cliente</h4>
+  <h4 id="item-4">CONTACTANOS</h4>
 </div>
 <!-- 11º Pregunta -->
   <div class="card">
     <div class="card-header" id="preguntaCliente1">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#cliente1" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#cliente1" aria-expanded="false" aria-controls="collapseThree" id="preg">
           ¿Cuál es el horario de atención al cliente?
         </button>
       </h2>
@@ -327,7 +337,7 @@ Las entregas de pedidos se realizan de lunes a viernes de 8:00 a 20:00, y sábad
   <div class="card">
     <div class="card-header" id="preguntaCliente2">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#cliente2" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#cliente2" aria-expanded="false" aria-controls="collapseThree" id="preg">
           ¿Cómo hago para contactarme?
         </button>
       </h2>
