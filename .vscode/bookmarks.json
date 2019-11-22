@@ -8,5 +8,20 @@
 				"label": ""
 			}
 		]
+	},
+	{
+		"path": "$ROOTPATH$\\Integrador\\myaccount.html",
+		"bookmarks": [
+			{
+				"line": 163,
+				"column": 31,
+				"label": ""
+			},
+			{
+				"line": 476,
+				"column": 10,
+				"label": ""
+			}
+		]
 	}
 ]
