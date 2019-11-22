@@ -1,16 +1,23 @@
-
-
+#body{
+    background-image: url(pared.jpg);
+    background-size: cover;
+}
+#Todo2{
+    background-color: rgba(255, 255, 255, 0.212);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    padding-top: 1%;
+    margin-bottom: 6%;
+    color: white;
+}
     #Todo{
-    width: 50%;
+    width: 70%;
     height: 100%;
-/* margin: auto;
-padding: auto;
-    
-     background-color: gray; 
-    text-align: center; 
-    */
-    margin-top: 7%;
-    margin-bottom: 10%; margin-left: 25%;
+    margin-top: 1%;
+    margin-bottom: 10%; 
+    padding-bottom: 1%;
+    margin-left: 15%;
 }
 @media (max-width: 375px) { 
     #Todo{margin-left: 0% ;
@@ -26,10 +33,10 @@ h1{
     color: #000;
     color: white;
 }
-footer{
+/* footer{
     
     background-color: rgba(128, 128, 128, 0.904);
-}
+} */
 img{
     width: 30px;
 }
