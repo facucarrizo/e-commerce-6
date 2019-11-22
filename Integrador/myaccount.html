@@ -108,7 +108,7 @@
                 <a
                   class="list-group-item"
                   data-toggle="list"
-                  href="#homea"
+                  href="#miPerfil"
                   role="tab"
                 >
                   Mi Perfil
@@ -116,7 +116,7 @@
                 <a
                   class="list-group-item"
                   data-toggle="list"
-                  href="#profilea"
+                  href="#guardados"
                   role="tab"
                 >
                   Guardados
@@ -124,12 +124,12 @@
                 <a
                   class="list-group-item"
                   data-toggle="list"
-                  href="#orders"
+                  href="#misCompras"
                   role="tab"
                 >
                   Mis Compras
                 </a>
-                <!-- <a class="list-group-item" href="#"> My orders</a>
+                <!-- <a class="list-group-item" href="#"> My misCompras</a>
                 <a class="list-group-item" href="#">Settings </a> -->
                 <!-- <a class="list-group-item" href="#"> My Selling Items </a>
                      <a class="list-group-item" href="#"> Received orders </a> -->
@@ -138,52 +138,94 @@
             <!-- col.// -->
             <main class="col-md-9">
               <div class="tab-content">
-                <div class="tab-pane active" id="homea" role="tabpanel">
+                <div class="tab-pane active" id="miPerfil" role="tabpanel">
                   <article class="card mb-3">
                     <div class="card-body">
                       <figure class="icontext">
                         <div class="icon">
                           <img
-                            class="rounded-circle img-sm border"
-                            src="images/avatars/avatar3.jpg"
+                            class="rounded-circle img-sm bordero"
+                            src="img/avatar3.jpg"
                           />
                         </div>
                         <div class="text">
-                          <strong> Mr. Jackson Someone </strong> <br />
+                          <strong> Sr. Joaquin laravel </strong> <br />
                           myloginname@gmail.com <br />
                           <a href="#" class="btn-link"> Editar</a>
                         </div>
                       </figure>
                       <hr />
-                      <p>
-                        <i class="fa fa-map-marker text-muted"></i> &nbsp; Mis
+                      
+<p>
+                        <i class="fa fa-map-marker text-muted" aria-hidden="true"></i> &nbsp; Mis
                         Direcciones
-                        <br />
-                        Tashkent city, Street name, Building 123, House 321
-                        &nbsp;
-                        <a href="#" class="btn-link"> Editar</a>
-                      </p>
+                        <br>   </p>
+<div role="tabpanel" class="tab-pane" id="address">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="" class="btn btn-primary">Nueva Dirección</a>
+                                </div>
+                            </div>
+                                                            <table class="table">
+                                <thead>
+                                    <tr><th>Alias</th>
+                                    <th>Calles</th>
+                                    <th>Piso/dto.</th>
+                                    <th>Ciudad</th>
+                                                                        <!-- <th>State</th> -->
+                                    <th>País</th>
+                                    <th>Cód. Postal</th>
+                                    <th>Télefono</th>
+                                    <th>Acciones</th>
+                                </tr></thead>
+                                <tbody>
+                                                                            <tr>
+                                            <td>home</td>
+                                            <td>Tte. Gral. J. D. Perón 1730</td>
+                                            <td>Tte. Gral. J. D. Perón 1730</td>
+                                            <td></td>
+                                                                                        <!-- <td></td> -->
+                                            <td>ARGENTINA</td>
+                                            <td>1037</td>
+                                            <td>02914705388</td>
+                                            <td>
+                                                <form method="post" action="https://shop.laracom.net/customer/1231/address/755" class="form-horizontal">
+                                                    <div class="btn-group">
+                                                        <input type="hidden" name="_method" value="delete">
+                                                        <input type="hidden" name="_token" value="HDtXA86dfpZzb97wkjnrjjp50OZFw9SoK7tmbFIP">
+                                                        <a href="" class="btn btn-primary"> <i class="fa fa-pencil"></i> Edit</a>
+                                                        <button onclick="return confirm('Are you sure?')" type="submit" class="btn btn-danger"> <i class="fa fa-trash"></i> Delete</button>
+                                                    </div>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                                                    </tbody>
+                            </table>
+                                                    </div>
+                   
+
+
 
                       <article class="card-group">
-                        <figure class="card bg">
+                        <figure class="card bg stats">
                           <div class="p-3">
                             <h5 class="card-title">38</h5>
                             <span>Mis Compras</span>
                           </div>
                         </figure>
-                        <figure class="card bg">
+                        <figure class="card bg stats">
                           <div class="p-3">
                             <h5 class="card-title">5</h5>
                             <span>Guardados</span>
                           </div>
                         </figure>
-                        <figure class="card bg">
+                        <figure class="card bg stats">
                           <div class="p-3">
                             <h5 class="card-title">12</h5>
                             <span>En espera</span>
                           </div>
                         </figure>
-                        <figure class="card bg">
+                        <figure class="card bg stats">
                           <div class="p-3">
                             <h5 class="card-title">50</h5>
                             <span>Items entregados</span>
@@ -197,21 +239,16 @@
 
                   
                 </div>
-                <div class="tab-pane" id="profilea" role="tabpanel">
-                  <h1>
-                    xcrteHRdevh7eZSLW2qC4QOeihzfuWBI0lCUKo5DtbySDPvAMhgukKoVRmAJAvMiZJpgDYpmbYbOzZdn04v7IaWRSkoLLGy7Ppxf2RrtGfu
-                  </h1>
-                </div>
-                <div class="tab-pane" id="orders" role="tabpanel">
+                <div class="tab-pane" id="guardados" role="tabpanel">  
                   <article class="card mb-3">
                     <div class="card-body">
                   <div class="card">
 <table class="table table-borderless table-shopping-cart">
 <thead class="text-muted">
 <tr class="small text-uppercase">
-  <th scope="col">Product</th>
-  <th scope="col" width="120">Quantity</th>
-  <th scope="col" width="120">Price</th>
+  <th scope="col">Producto</th>
+  <th scope="col" width="120">Cantidad</th>
+  <th scope="col" width="120">Precio</th>
   <th scope="col" class="text-right" width="200"> </th>
 </tr>
 </thead>
@@ -219,10 +256,10 @@
 <tr>
 	<td>
 		<figure class="itemside">
-			<div class="aside"><img src="images/items/1.jpg" class="img-sm"></div>
+			<div class="aside"><img src="img/images2.jfif" class="img-sm"></div>
 			<figcaption class="info">
 				<a href="#" class="title text-dark">Some name of item goes here nice</a>
-				<p class="text-muted small">Size: XL, Color: blue, <br> Brand: Gucci</p>
+				<p class="text-muted small">Talle: XL, Color: Azul, <br> Marca: Gucci</p>
 			</figcaption>
 		</figure>
 	</td>
@@ -237,21 +274,21 @@
 	<td> 
 		<div class="price-wrap"> 
 			<var class="price">$1156.00</var> 
-			<small class="text-muted"> $315.20 each </small> 
+			<small class="text-muted"> $315.20 c/u </small> 
 		</div> <!-- price-wrap .// -->
 	</td>
 	<td class="text-right"> 
 	<a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a> 
-	<a href="" class="btn btn-light"> Remove</a>
+	<a href="" class="btn btn-light"> Eliminar</a>
 	</td>
 </tr>
 <tr>
 	<td>
 		<figure class="itemside">
-			<div class="aside"><img src="images/items/2.jpg" class="img-sm"></div>
+			<div class="aside"><img src="img/images2.jfif" class="img-sm"></div>
 			<figcaption class="info">
-				<a href="#" class="title text-dark">Product name  goes here nice</a>
-				<p class="text-muted small">Size: XL, Color: blue, <br> Brand: Gucci</p>
+				<a href="#" class="title text-dark">Nombre del Producto</a>
+				<p class="text-muted small">Talle: XL, Color: Azul, <br> Marca: Gucci</p>
 			</figcaption>
 		</figure>
 	</td>
@@ -266,21 +303,21 @@
 	<td> 
 		<div class="price-wrap"> 
 			<var class="price">$149.97</var> 
-			<small class="text-muted"> $75.00 each </small>  
+			<small class="text-muted"> $75.00 c/u </small>  
 		</div> <!-- price-wrap .// -->
 	</td>
 	<td class="text-right"> 
 	<a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a> 
-	<a href="" class="btn btn-light btn-round"> Remove</a>
+	<a href="" class="btn btn-light btn-round"> Eliminar</a>
 	</td>
 </tr>
 <tr>
 	<td>
 		<figure class="itemside">
-			<div class="aside"><img src="images/items/3.jpg" class="img-sm"></div>
+			<div class="aside"><img src="img/images.jfif" class="img-sm"></div>
 			<figcaption class="info">
 				<a href="#" class="title text-dark">Another name of some product goes just here</a>
-				<p class="small text-muted">Size: XL, Color: blue,  Brand: Tissot</p>
+				<p class="small text-muted">Talle: XL, Color: Azul, <br> Marca: Gucci</p>
 			</figcaption>
 		</figure>
 	</td>
@@ -294,27 +331,95 @@
 	<td> 
 		<div class="price-wrap"> 
 			<var class="price">$98.00</var> 
-			<small class="text-muted"> $578.00 each</small> 
+			<small class="text-muted"> $578.00 c/u</small> 
 		</div> <!-- price-wrap .// -->
 	</td>
 	<td class="text-right"> 
 		<a data-original-title="Save to Wishlist" title="" href="" class="btn btn-light" data-toggle="tooltip"> <i class="fa fa-heart"></i></a> 
-		<a href="" class="btn btn-light btn-round"> Remove</a>
+		<a href="" class="btn btn-light btn-round"> Eliminar</a>
 	</td>
 </tr>
 </tbody>
 </table>
 <div class="card-body border-top">
 	<!-- <a href="#" class="btn btn-primary float-md-right"> Make Purchase <i class="fa fa-chevron-right"></i> </a> -->
-	<a href="index.html" class="btn btn-light"> <i class="fa fa-chevron-left"></i> Continue shopping </a>
+	<a href="index.html" class="btn btn-light"> <i class="fa fa-chevron-left"></i> Seguir comprando </a>
 </div>	
 </div> <!-- card.// -->
 <div class="alert alert-success mt-3">
-	<p class="icontext"><i class="icon text-success fa fa-truck"></i> Free Delivery within 1-2 weeks</p>
+	<p class="icontext"><i class="icon text-success fa fa-truck"></i> Envios gratis entre 1-2 semanas</p>
 </div>
                 </div>
                 </article>
-              </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane cardigreen " id="misCompras">
+                  <article class="card-mb3">
+                    <div class="card-body">
+                      <div class="card">
+                                                 <table class="table table-borderless ">
+                                <tbody>
+                                <tr id="text-uppercase">
+                                    <td >Date</td>
+                                    <td>Total</td>
+                                    <td>Status</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                                                    <tr>
+                                        <td>
+                                            <a data-toggle="modal" data-target="#order_modal_411" title="Show order" href="javascript: void(0)">Nov 22, 2019 04:13 am</a>
+                                            <!-- Button trigger modal -->
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="order_modal_411" tabindex="-1" role="dialog" aria-labelledby="MyOrders">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                            <h4 class="modal-title" id="myModalLabel">Reference #59bb23ae-a6a8-4225-a4ea-ee96f83bdf2f</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <table class="table">
+                                                                <thead>
+                                                                    <tr><th>Address</th>
+                                                                    <th>Payment Method</th>
+                                                                    <th>Total</th>
+                                                                    <th>Status</th>
+                                                                </tr></thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <address>
+                                                                                <strong>home</strong><br>
+                                                                                Tte. Gral. J. D. Perón 1730 Piso 13 Dpto. "115"<br>
+                                                                            </address>
+                                                                        </td>
+                                                                        <td>bank transfer</td>
+                                                                        <td>$ 5.00</td>
+                                                                        <td><p class="text-center" style="color: #000000; background-color:rgb(211, 197, 77)">Comprado</p></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="label  label-danger ">USD 5.00</span></td>
+                                        <td><p class="text-center" style="color: #000000; background-color: rgb(211, 197, 77)">Comprado</p></td>
+                                    </tr>
+                                                                </tbody>
+                            </table>
+                      </div>
+                    </div>
+                  </article>
+                                     
+                                
+                                                    </div>
+               
 
               <!-- card.// -->
             </main>
@@ -324,6 +429,7 @@
         <!-- container .//  -->
       </section>
 
+<!--!ACA TERMINA MYACCOUNT.//-->
       
       <!--container.//-->
 
