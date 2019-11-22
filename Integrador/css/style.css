@@ -1,86 +1,83 @@
 /* Body fondo de pantalla */
 
 body {
-    background-image:url(https://www.solofondos.com/wp-content/uploads/2015/11/Fondos-para-p%C3%A1ginas-web.jpg);
+  background-image: url(https://www.solofondos.com/wp-content/uploads/2015/11/Fondos-para-p%C3%A1ginas-web.jpg);
 
- background-position: center center;
+  background-position: center center;
 
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
 
-background-attachment: fixed;
+  background-attachment: fixed;
 
-background-size: cover;
+  background-size: cover;
 
-background-color: black;
-
-
+  background-color: black;
 }
-
 
 /* Barra navegaciòn */
 
 nav.navbar {
-    background-color: rgb(91, 88, 105);
+  background-color: rgb(91, 88, 105);
 }
-
-
 
 /* tarjetas */
 
-.card-product{
-    background: rgba(51, 71, 136, 0.664);
+.card-product {
+  background: rgba(51, 71, 136, 0.664);
 }
-    .card-product .img-wrap {
-        border-radius: 3px 3px 0 0;
-        overflow: hidden;
-        position: relative;
-        height: 220px;
-        text-align: center;
-    }
-    .card-product .img-wrap img {
-        max-height: 100%;
-        max-width: 100%;
-        object-fit: cover;
-    }
-    .card-product .info-wrap {
-        overflow: hidden;
-        padding: 15px;
-        border-top: 1px solid;
-    }
-    .card-product .bottom-wrap {
-        padding: 15px;
-        border-top: 1px solid rgb(27, 46, 212);
-    }
-    
-    .label-rating { margin-right:10px;
-        color: rgba(255, 255, 255, 0.986);
-        display: inline-block;
-        vertical-align: middle;
-    }
-   .title,.desc,.price-new{
-color: cornsilk;
-    }
-    .card-product .price-old {
-        color: #999;
-    }
-
-    .tarjetas {
-        max-width: 70%;
-        max-height: 20%;
-    }
-
-    /* Footer */
-
-    .page-footer  {
-        background-color: blueviolet;
-    }
-
-    article {
-       max-width: 65%;
+.card-product .img-wrap {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  position: relative;
+  height: 220px;
+  text-align: center;
+}
+.card-product .img-wrap img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.card-product .info-wrap {
+  overflow: hidden;
+  padding: 15px;
+  border-top: 1px solid;
+}
+.card-product .bottom-wrap {
+  padding: 15px;
+  border-top: 1px solid rgb(27, 46, 212);
 }
 
-    #carouselExampleCaptions {
-        max-width: 65%;
-       justify-content: center;
-    }
- 
+.label-rating {
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.986);
+  display: inline-block;
+  vertical-align: middle;
+}
+.title,
+.desc,
+.price-new {
+  color: cornsilk;
+}
+.card-product .price-old {
+  color: #999;
+}
+
+.tarjetas {
+  max-width: 70%;
+  max-height: 20%;
+}
+
+/* Footer */
+
+.page-footer {
+  background-color: blueviolet;
+}
+
+/* article {
+       max-width: 65%; 
+/* } */ /* comente este estilo porque me estaba rompiendo el footer en myaccount.html */
+
+#carouselExampleCaptions {
+  max-width: 65%;
+  justify-content: center;
+}
