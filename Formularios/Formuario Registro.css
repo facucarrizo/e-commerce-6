@@ -1,0 +1,103 @@
+ body{
+     background-size: cover;
+    background-image: url(foto.jpg);
+    
+   
+} 
+
+#aa:hover{
+    color: red;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+#aa{
+    transition: transform .2s;
+    color: white;
+    text-decoration: none; 
+    position: absolute;
+    position:fixed; 
+    bottom: 10px; 
+    right: 10px;
+    background-color: black;
+    padding: 1%;
+    border-radius: 50%;
+    z-index: 100;
+}
+#Todo{
+    width: 80%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.795);
+    color: white;
+    margin-left: 10%; 
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-bottom: 5%; 
+    padding-right: 2%;
+ 
+}
+
+@media (min-width: 375px) and (max-width: 767.98px) { #Todo{
+    padding-left: 1%;
+    margin-left: 0%;
+    width: auto;
+    background-color:rgba(0, 0, 0, 0.795);
+    color: white;
+  
+   
+ 
+} } 
+@media (min-width: 760px) and (max-width: 1200px) { #Todo{
+    width: 130%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.795);
+    color: white;
+    margin-left: 5%; 
+    margin-right: 20%; 
+    margin-top: 7%;
+    margin-bottom: 10%;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-bottom: 5%; 
+    padding-right: 0%;
+ 
+}
+footer{
+width: 121%;
+} }
+
+
+.breadcrum{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 0.5rem;
+    list-style: none;
+    border-radius: .25rem;
+    margin-right: .25rem;
+    ;
+   
+}
+#ter{
+    color: black;
+    text-align: center;
+}
+}
+.dark{
+    color: yellow;
+}
+.form-control{
+    background-color: rgba(255, 255, 255, 0.623);
+}
+#titulo{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 2%;
+    font-family: 'Tomorrow', sans-serif;
+}
+.max-5{
+    margin: 0%;
+}
+
