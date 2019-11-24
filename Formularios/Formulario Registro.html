@@ -10,94 +10,66 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   
+   <link rel="stylesheet" href="style.css">
     <title>Registro</title>
 </head>
 <body >
   
     <a href="Contacto.html" id="aa" > Contactanos</a>
    
-    <div class="mx-3">
+   <!-- Header -->
+  <div class="mx-5">
 
-        <nav class="navbar navbar-expand-lg navbar-ligth bg-dark">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <nav class=" navbar navbar-expand-lg navbar-light"
+    id="inicio">
     
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
+      <h4 class=" mr-3 text-uppercase font-weight-bold" href="index.html">CASBUSAGI</h4>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul 
+        class="navbar-nav mr-auto"><li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categorías
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Hombres</a>
+              <a class="dropdown-item" href="#">Mujeres</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Niños</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Ropa</a>
+          </li>
             </ul>
-            <!-- Formulario Botones -->
-            <nav aria-label="breadcrum">
-              <ol class="breadcrum">
-             
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="background: none; border: none; color: white;">Iniciar Sesion</button>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <form>
-                              <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Email</label>
-                                <input type="text" class="form-control" id="recipient-name" required>
-                                <small id="emailHelp" class="form-text text-muted">No compartiremos tu direccion de Email</small>
-                              </div>
-                              <div class="form-group">
-                                <label for="message-text" class="col-form-label">Contraseña</label>
-                                <input type="password" class="form-control" required>
-                                <br>
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Recordarme</label>
-                                  </div>
-                              </div>
-                            </form>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="background: none; border: none;"><a style="color: white; text-decoration: none;" href="Formulario Registro.html"> Registrarme</a></button>
-            </nav>
-            <!-- fin botones de registro-->
-            <form class="form-inline my-2 my-lg-0">
-            
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
+        
+        <div class="widgets-wrap float-md-right">
+			<div class="widget-header  mr-3">
+        <a href="carrito.html" class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></a>
+				<span class="badge badge-pill badge-danger notify">0</span>
+			</div>
+			<div class="widget-header icontext">
+				<a href="usuario.html" class="mr-3 icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a>
+				<div class="text">
+					<span class="text-muted">Bienvenido!</span>
+					<div> 
+						<a href="../Formularios/Formulario Registro.html">Iniciar sesión</a> |  
+						<a href="../Formularios/Formulario Registro.html"> Registrarse</a>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!-- <a class="nav-link" href="usuario.html"><i class="fas fa-user"></i>Perfil</a>
+        <form class="form-inline my-2 my-lg-0">
+          
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-shopping-cart"></i></button>
+        </form> -->
+      
+      </div>
+    </nav>
   
   <div id="Todo">
     

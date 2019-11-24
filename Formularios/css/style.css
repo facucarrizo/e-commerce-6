@@ -1,0 +1,199 @@
+/* Body fondo de pantalla */
+
+body {
+	/* background-image: url(https://www.solofondos.com/wp-content/uploads/2015/11/Fondos-para-p%C3%A1ginas-web.jpg);
+
+  background-position: center center;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  background-size: cover; */
+
+	background-color: white;
+}
+
+/* Barra navegaciòn */
+
+nav.navbar {
+	background-color: #ffffff;
+}
+
+.dropdown-menu {
+	background-color: #c3abbe;
+}
+
+/* tarjetas */
+
+.card-product {
+	background: rgb(0, 0, 0);
+}
+.card-product .img-wrap {
+	border-radius: 10px 10px 0 0;
+	overflow: hidden;
+	position: relative;
+	height: 200px;
+	text-align: center;
+}
+.card-product .img-wrap img {
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+}
+.card-product .info-wrap {
+	overflow: hidden;
+	padding: 20px;
+	border-top: 1px solid;
+}
+.card-product .bottom-wrap {
+	padding: 20px;
+	border-top: 1px solid rgb(27, 46, 212);
+}
+
+.label-rating {
+	margin-right: 10px;
+	color: rgba(255, 255, 255, 0.986);
+	display: inline-block;
+	vertical-align: middle;
+}
+.title,
+.desc,
+.price-new {
+	color: cornsilk;
+}
+.card-product .price-old {
+	color: #999;
+}
+
+.tarjetas {
+	max-width: 70%;
+	max-height: 20%;
+}
+
+.bg-secondary {
+	background-color: #000000 !important;
+}
+
+/* Footer */
+
+.page-footer {
+	background-color: rgba(182, 153, 175, 0.815);
+}
+
+/* article {
+       max-width: 65%; 
+/* } */ /* comente este estilo porque me estaba rompiendo el footer en myaccount.html */
+
+#carouselExampleCaptions {
+	max-width: 100%;
+	padding-bottom: 100px;
+	max-height: 100%;
+}
+
+/* CSS menu nuevo */
+
+.widget-header {
+	display: inline-flex;
+	vertical-align: middle;
+	position: relative;
+}
+
+.mr-3,
+.mx-3 {
+	margin-right: 1rem !important;
+}
+
+.widget-header a {
+	color: #955c8a;
+}
+.icon-sm {
+	text-align: center;
+	width: 48px;
+	height: 48px;
+	line-height: 48px !important;
+	font-size: 20px;
+}
+.widget-header .notify {
+	position: absolute;
+	top: -3px;
+	right: -10px;
+}
+
+.notify {
+	position: absolute;
+	top: -4px;
+	right: -10px;
+	display: inline-block;
+	padding: 0.25em 0.6em;
+	font-size: 12px;
+	line-height: 1;
+	text-align: center;
+	border-radius: 3rem;
+	color: #fff;
+	background-color: #fa3434;
+}
+
+.badge-danger {
+	color: #fff;
+	background-color: #fa3434;
+}
+.badge-pill {
+	padding-right: 0.6em;
+	padding-left: 0.6em;
+	border-radius: 10rem;
+}
+.badge {
+	display: inline-block;
+	padding: 0.25em 0.4em;
+	font-size: 75%;
+	font-weight: 600;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 0.37rem;
+	-webkit-transition: color 0.15s ease-in-out,
+		background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+		-webkit-box-shadow 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+		-webkit-box-shadow 0.15s ease-in-out;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+.nav-link:hover {
+	border-radius: 3px;
+	background-color: #c3abbe;
+	/* border-bottom: 4px solid #c3abbe; */
+}
+
+.w-ico {
+	color: black;
+}
+.rounded-circle {
+	border-radius: 50% !important;
+	color: #c3abbe;
+}
+
+.fa-user:hover {
+	color: #d5e8cb;
+}
+
+.fa-shopping-cart:hover {
+	color: #e6dce4;
+}
+
+/* .card-account {
+	background-color: #d5e8cb;
+}
+
+.card-account:hover {
+	background-color: #7d28a7;
+} */

@@ -1,0 +1,80 @@
+#body{
+    background-image: url(../img/pared.jpg);
+    background-size: cover;
+}
+#aa:hover{
+    color: purple;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+#aa{
+    transition: transform .2s;
+    color: white;
+    text-decoration: none; 
+    position: absolute;
+    position:fixed; 
+    bottom: 10px; 
+    right: 10px;
+    background-color: black;
+    padding: 1%;
+    border-radius: 50%;
+    z-index: 100;
+}
+#Todo2{
+    background-color: rgba(255, 255, 255, 0.212);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    padding-top: 1%;
+    margin-bottom: 6%;
+    color: white;
+}
+    #Todo{
+    width: 70%;
+    height: 100%;
+    margin-top: 1%;
+    margin-bottom: 10%; 
+    padding-bottom: 1%;
+    margin-left: 15%;
+}
+@media (max-width: 375px) { 
+    #Todo{margin-left: 0% ;
+        width: auto;
+    }}
+h1{
+    text-align: center;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 25px;
+}
+#hola{
+    background-color: black;
+    color: #000;
+    color: white;
+}
+/* footer{
+    
+    background-color: rgba(128, 128, 128, 0.904);
+} */
+img{
+    width: 30px;
+}
+#Redes{
+    font-size: 20px;
+    text-align: center;
+    
+}
+#Copy{
+    text-align: left;
+   padding-left: 5%;
+}
+@media (min-width: 200px) and (max-width: 767.98px) { #Todo2{
+    
+    margin: 3%;
+    width: auto;
+    background-color:rgba(0, 0, 0, 0.795);
+    color: white;
+  
+   
+ 
+} } 
