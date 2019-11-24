@@ -191,3 +191,11 @@ figure {
 .card-account {
 	background-color: #d5e8cb;
 }
+
+.fa-user:hover {
+	color: #d5e8cb;
+}
+
+.fa-shopping-cart:hover {
+	color: #e6dce4;
+}
