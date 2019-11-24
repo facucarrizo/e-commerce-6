@@ -105,7 +105,7 @@ nav.navbar {
 }
 
 .widget-header a {
-	color: #212529;
+	color: #955c8a;
 }
 .icon-sm {
 	text-align: center;
@@ -173,4 +173,12 @@ a:hover {
 	border-radius: 3px;
 	background-color: #c3abbe;
 	/* border-bottom: 4px solid #c3abbe; */
+}
+
+.w-ico {
+	color: black;
+}
+.rounded-circle {
+	border-radius: 50% !important;
+	color: #c3abbe;
 }
