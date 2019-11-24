@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -15,9 +15,10 @@
 <body>
 
   <!-- Header -->
-  <div class="container-fluid">
+  <div class="container-fliud">
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light"
+    id="inicio">
       <a class="navbar-brand" href="index.html"><img src="img/Icono.ico" alt="" height="40px" width="200px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,7 +27,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Link</a>
           </li>
           <li class="nav-item">
             
@@ -35,7 +36,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Zapatillas
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Ellos</a>
               <a class="dropdown-item" href="#">Ellas</a>
               <div class="dropdown-divider"></div>
@@ -46,10 +47,10 @@
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
-        <a class="nav-link" href="usuario.html"><i class="fas fa-user" ></i>Perfil</a>
+        <a class="nav-link" href="usuario.html"><i class="fas fa-user"></i>Perfil</a>
         <form class="form-inline my-2 my-lg-0">
           
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" ><i class="fas fa-shopping-cart" href="carrito.html"></i></button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-shopping-cart"></i></button>
         </form>
       </div>
     </nav>
@@ -81,7 +82,7 @@
 
 
     <!-- carrusel -->
-    <div class="bd-example pb-5 pt-1 row justify-content-center">
+    <div class="bd-example pt-2">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -163,8 +164,8 @@
           <figure class="card card-product">
             <div class="img-wrap"><img src="img/images.jfif"></div>
             <figcaption class="info-wrap">
-              <h4 class="title">Another name of item</h4>
-              <p class="desc">Some small description goes here</p>
+              <h4 class="title">NIKE</h4>
+              <p class="desc">Encuentre aquí los ultimos modelos del mercado.</p>
               <div class="rating-wrap">
                 <div class="label-rating">132 reviews</div>
                 <div class="label-rating">154 orders </div>
@@ -172,17 +173,15 @@
             </figcaption>
             <div class="bottom-wrap">
               <a href="" class="btn btn-sm btn-primary float-right">Ver más</a>
-              <div class="price-wrap h5">
-                <span class="price-new">$1280</span> <del class="price-old">$1980</del>
-              </div> 
+              
           </figure>
         </div> 
         <div class="col-md-4">
           <figure class="card card-product">
-            <div class="img-wrap"><img src="img/images2.jfif"> </div>
+            <div class="img-wrap"><img src="img/vans.jpg"> </div>
             <figcaption class="info-wrap">
-              <h4 class="title">Good product</h4>
-              <p class="desc">Some small description goes here</p>
+              <h4 class="title">VANS</h4>
+              <p class="desc">Todos los talles y colores.</p>
               <div class="rating-wrap">
                 <div class="label-rating">132 reviews</div>
                 <div class="label-rating">154 orders </div>
@@ -190,9 +189,6 @@
             </figcaption>
             <div class="bottom-wrap">
               <a href="" class="btn btn-sm btn-primary float-right">Ver más</a>
-              <div class="price-wrap h5">
-                <span class="price-new">$1280</span> <del class="price-old">$1980</del>
-              </div> 
             </div> 
           </figure>
         </div> 
@@ -200,8 +196,8 @@
           <figure class="card card-product">
             <div class="img-wrap"><img src="img/images2.jfif"></div>
             <figcaption class="info-wrap">
-              <h4 class="title">Product name goes here</h4>
-              <p class="desc">Some small description goes here</p>
+              <h4 class="title">ALL STAR</h4>
+              <p class="desc">El calzado estrella te esta esperando.</p>
               <div class="rating-wrap">
                 <div class="label-rating">132 reviews</div>
                 <div class="label-rating">154 orders </div>
@@ -209,9 +205,7 @@
             </figcaption>
             <div class="bottom-wrap">
               <a href="" class="btn btn-sm btn-primary float-right">Ver más</a>
-              <div class="price-wrap h5">
-                <span class="price-new">$1280</span> <del class="price-old">$1980</del>
-              </div> 
+              
             </div> 
           </figure>
         </div> 
@@ -242,9 +236,8 @@
    
     <article class="bg-secondary mb-3  container-fluid">
       <div class="card-body text-center">
-        <h4 class="text-white">HTML UI KIT <br> Ready to use Bootstrap 4 components and templates </h4>
-        <p class="h5 text-white"> for Ecommerce, marketplace, booking websites
-          and product landing pages</p> <br>
+        <h4 class="text-white"><a href="#"><img src="img/Icono.ico" alt="" height="100px" width="300px"></a> <br>SIEMPRE UN PASO POR DELANTE </h4>
+        <p class="h5 text-white"> Importadores en calidad, expertos en atención.</p> <br>
         
       </div>
       

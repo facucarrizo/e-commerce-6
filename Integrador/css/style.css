@@ -1,7 +1,7 @@
 /* Body fondo de pantalla */
 
 body {
-  background-image: url(https://www.solofondos.com/wp-content/uploads/2015/11/Fondos-para-p%C3%A1ginas-web.jpg);
+  /* background-image: url(https://www.solofondos.com/wp-content/uploads/2015/11/Fondos-para-p%C3%A1ginas-web.jpg);
 
   background-position: center center;
 
@@ -9,27 +9,32 @@ body {
 
   background-attachment: fixed;
 
-  background-size: cover;
+  background-size: cover; */
 
-  background-color: black;
+  background-color: white;
 }
 
 /* Barra navegaciòn */
 
 nav.navbar {
-  background-color: rgb(91, 88, 105);
-}
+  background-color: #0e1414b6;
+   }
+
+  .dropdown-menu{
+    background-color: teal;
+      }
+
 
 /* tarjetas */
 
 .card-product {
-  background: rgba(51, 71, 136, 0.664);
+  background: rgb(0, 0, 0);
 }
 .card-product .img-wrap {
-  border-radius: 3px 3px 0 0;
+  border-radius: 10px 10px 0 0;
   overflow: hidden;
   position: relative;
-  height: 220px;
+  height: 200px;
   text-align: center;
 }
 .card-product .img-wrap img {
@@ -39,11 +44,11 @@ nav.navbar {
 }
 .card-product .info-wrap {
   overflow: hidden;
-  padding: 15px;
+  padding: 20px;
   border-top: 1px solid;
 }
 .card-product .bottom-wrap {
-  padding: 15px;
+  padding: 20px;
   border-top: 1px solid rgb(27, 46, 212);
 }
 
@@ -70,7 +75,7 @@ nav.navbar {
 /* Footer */
 
 .page-footer {
-  background-color: blueviolet;
+  background-color: rgba(182, 153, 175, 0.815);
 }
 
 /* article {
@@ -78,6 +83,8 @@ nav.navbar {
 /* } */ /* comente este estilo porque me estaba rompiendo el footer en myaccount.html */
 
 #carouselExampleCaptions {
-  max-width: 65%;
-  justify-content: center;
+  max-width: 100%;
+  padding-bottom: 100px;
+  max-height: 100%;
 }
+
