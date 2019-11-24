@@ -148,3 +148,40 @@ a {
   padding-left: 0;
   margin-bottom: 0;
 }
+/* Micarrito y guardados de usuario */
+.itemside {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+figure {
+  margin-bottom: 0;
+}
+figure {
+  margin: 0 0 1rem;
+}
+.itemside .aside {
+  position: relative;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.itemside .info {
+  padding-left: 15px;
+  padding-right: 7px;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.dlist-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.dlist-align dd {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
