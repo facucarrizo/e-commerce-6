@@ -166,7 +166,7 @@ nav.navbar {
 }
 
 a:hover {
-	color: #c3abbe;
+	color: #7d28a7;
 	text-decoration: underline;
 }
 .nav-link:hover {
@@ -182,3 +182,15 @@ a:hover {
 	border-radius: 50% !important;
 	color: #c3abbe;
 }
+.no-link {
+	pointer-events: none;
+	cursor: default;
+}
+
+/* .card-account {
+	background-color: #d5e8cb;
+}
+
+.card-account:hover {
+	background-color: #7d28a7;
+} */
