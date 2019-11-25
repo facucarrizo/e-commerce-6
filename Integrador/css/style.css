@@ -57,6 +57,7 @@ nav.navbar {
 	position: relative;
 	height: 200px;
 	text-align: center;
+	background-color: white;
 }
 .card-product .img-wrap img {
 	max-height: 100%;
@@ -89,8 +90,9 @@ nav.navbar {
 }
 
 .tarjetas {
-	max-width: 70%;
+	max-width: 100%;
 	max-height: 20%;
+	text-align: center;
 }
 
 .bg-secondary {
