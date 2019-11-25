@@ -13,29 +13,30 @@ body {
 
 	background-color: white;
 }
-#aa:hover{
-    color: purple;
-    font-weight: bold;
-    transform: scale(1.1);
+#aa:hover {
+	color: purple;
+	font-weight: bold;
+	transform: scale(1.1);
 }
 
-#aa{
-    transition: transform .2s;
-    color: white;
-    text-decoration: none; 
-    position: absolute;
-    position:fixed; 
-    bottom: 10px; 
-    right: 10px;
-    background-color: black;
-    padding: 1%;
-    border-radius: 50%;
-    z-index: 100;
+#aa {
+	transition: transform 0.2s;
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	background-color: black;
+	padding: 1%;
+	border-radius: 50%;
+	z-index: 100;
 }
 
 /* Barra navegaciòn */
 
 nav.navbar {
+	margin-top: 2%;
 	background-color: #ffffff;
 }
 
