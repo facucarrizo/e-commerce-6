@@ -3,23 +3,8 @@ html,body {
     height: 100%;
 
 }
-@media (min-width: 100px) and (max-width: 1100px) {
-    #hoy{
-        width: 100%;
-        transition: 1s;
-        margin: 0%;
-        padding: 0%;
-        float: left;
-    }
-    #hoy{
-        width:100% ;
-        transition: 1s;
-        margin: 0%;
-        padding: 0%;
-        float: left;
-    }
 
-}
+
 .opciones {
 float: left;
 background-color: black;
@@ -67,8 +52,8 @@ height: 30%;
 #hola{
     width:30%;
     transition: 1s;
-    margin: 3%;
-    padding: 2%;
+    margin: 4%;
+    padding: 3%;
     float: left;
 }
 /*corregir*/

@@ -16,7 +16,7 @@
 
   <a href="Contacto.html" id="aa" > Contactanos</a>
   <!-- Header -->
-  <div class="mx-5">
+  <div class="">
 <!-- 
  HEAD -->
    
@@ -140,18 +140,30 @@
 <span class="carousel-control-next-icon" aria-hidden="true"></span>
 <span class="sr-only">Next</span>
 </a>
-
-<i id="cartera" class="fa fa-shopping-bag"></i>
-
-
-
+<div class="colores">
+    <button type="button" class="btn btn-light" style="color:rgba(255, 255, 255, 0);">BL</button>
+    <button type="button" class="btn btn-secondary" style="color:rgba(129, 127, 127, 0);">BL</button>
+    <button type="button" class="btn btn-success" style="color: rgba(0, 128, 0, 0);">BL</button>
+    <button type="button" class="btn btn-danger" style="color: rgba(255, 0, 0, 0);">BL</button>
+</div>
 </div>
 
 </div>
 <div class="col-md-7">
     <p class="newarrival text-center"> NEW </p>
 
-    <h2>Nike Shoe's</h2>
+    <h2>Nike Shoe's <a style="position: absolute; top: 14%; right:10%;" href="">
+      <ul>
+      <li><i id="cartera" class="fa fa-shopping-bag"></i></li>
+      <li> 
+        <i  id="cartera" class="fa fa-heart-o active"></i></li>
+    </ul>
+      
+    </a
+  
+  ></h2>
+
+
 <div class="estrellas">
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
@@ -160,10 +172,12 @@
     <i class="fa fa-star"></i>
 </div>
     <p class="precio"> $5.000</p>
-<div class="talles">
-  <h3>Selecciona tu Talle:</h3>
 
-  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+<div class="talles">
+
+  <h3>Selecciona tu Talle:</h3>
+  <div style="width: 10%;" class="btn-group btn-group-toggle" data-toggle="buttons" class="talles-btn">
    <label class="btn btn-secondary">
    <input type="radio" name="talles" class="talle" autocomplete="off" > 38</label>
   <label class="btn btn-secondary">
@@ -174,7 +188,6 @@
  <input type="radio" name="talles" class="talle" autocomplete="off" > 41 </label>
  <label class="btn btn-secondary">
  <input type="radio" name="talles" class="talle" autocomplete="off"> 42 </label>
-
 </div>
 </div>
 
