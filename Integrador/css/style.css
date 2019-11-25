@@ -105,6 +105,10 @@ nav.navbar {
 	background-color: rgba(182, 153, 175, 0.815);
 }
 
+#seguinos {
+	text-align: right;
+}
+
 /* article {
        max-width: 65%;
 /* } */ /* comente este estilo porque me estaba rompiendo el footer en myaccount.html */
