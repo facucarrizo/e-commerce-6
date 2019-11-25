@@ -1,6 +1,4 @@
-body{
 
-}
 
 .contenedor-tarjeta{
     background-color: black;
@@ -83,4 +81,10 @@ ul{
 
 .pag-met {
     height: 2%;
+}
+
+#cartera{
+    font-size: 40px;
+    margin: 10%;
+    color: white;
 }
