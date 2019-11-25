@@ -1,6 +1,4 @@
-body{
 
-}
 
 .contenedor-tarjeta{
     background-color: black;
@@ -32,6 +30,7 @@ img {
 
 .col-md-7 h2{
     color: rgb(255, 255, 255);
+    margin-left: 24% ;
 }
 
 .estrellas{
@@ -65,10 +64,8 @@ ul{
 
 .talles h3{
     color: goldenrod;
-    font-size: 150%;
-    margin-left: 20%;
+    font-size: 100%;
 }
- 
 
 
 .precioypago {
@@ -84,3 +81,19 @@ ul{
 .pag-met {
     height: 2%;
 }
+
+#cartera{
+    font-size: 20px;
+    margin: 5%;
+    color: white;   
+}
+
+.colores{
+    margin-top: 2%;
+    margin-left: 25%;
+}
+
+.colores button {
+    border-radius: 100%;
+}
+
