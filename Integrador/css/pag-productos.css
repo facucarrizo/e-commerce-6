@@ -1,13 +1,25 @@
 html,body {
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
-   
-=======
-    
->>>>>>> 28724ab63e7303d370cf1ea844c06a4ebe1b55a8
-}
 
+
+}
+@media (min-width: 100px) and (max-width: 1100px) {
+    #hoy{
+        width: 100%;
+        transition: 1s;
+        margin: 0%;
+        padding: 0%;
+        float: left;
+    }
+    #hoy{
+        width:100% ;
+        transition: 1s;
+        margin: 0%;
+        padding: 0%;
+        float: left;
+    }
+}
 .opciones {
 float: left;
 background-color: black;
@@ -29,27 +41,17 @@ height: 30%;
 }
 
 
-.zapatillas {
-    margin-left:25% ;
-    margin-right: 10%;
+#zapatillas {
+    overflow: hidden;
+    margin:0 auto;
     margin-top: 2%;
     margin-bottom: 2%;
-    width: 70%;
-    padding: 2%;
-    height: 100%;
+    width: 85%;
     background-color: rgba(3, 3, 3, 0.171);
-    overflow: hidden;
-}
+} 
 
-
-
-
-.caja-productos {
-    width: 30%;
-    margin-top: 1%;
-    float: left;
-    transition: 1s;
-    margin: 0 1%;
+#nomb h2 {
+ font-size: 100;
 }
 
 .producto img{
@@ -57,15 +59,46 @@ height: 30%;
 }
 
 
-.caja-productos:hover{
-    transform: scale(1.2);
+#hola:hover{
+    transform: scale(1.1);
 }
 
+/*cORRREGIR*/
+#hola{
+    width:30%;
+    transition: 1s;
+    margin: 3%;
+    padding: 2%;
+    float: left;
+}
+/*corregir*/
+
+
+#hola2 {
+width: 100%;
+}
 
 .producto {
     padding: 2%;
 }
 
+#dos {
+    text-align: center;
+    padding: 2px;
+    margin: 3%;
+}
+
+#uno{
+    text-align: center;
+    background-color: rgba(3, 3, 3, 0.171);
+
+}
+
+#uno p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
 
 
 .producto img {
@@ -86,12 +119,7 @@ height: 30%;
     /* background-color: rgba(0, 0, 0, 0.411); */
 }
 
-<<<<<<< HEAD
 .producto i{
-    color: rgb(238, 255, 0);
-=======
-i{
     /* color: rgb(238, 255, 0); */
->>>>>>> 28724ab63e7303d370cf1ea844c06a4ebe1b55a8
     font-size: 15px;
 }
