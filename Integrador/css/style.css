@@ -1,7 +1,9 @@
 /* Body fondo de pantalla */
 
 body {
-	/* background-image: url(https://www.solofondos.com/wp-content/uploads/2015/11/Fondos-para-p%C3%A1ginas-web.jpg);
+/*
+	background-image: url(https://images3.alphacoders.com/100/1008404.jpg);
+
 
   background-position: center center;
 
@@ -36,7 +38,6 @@ body {
 /* Barra navegaciòn */
 
 nav.navbar {
-	margin-top: 2%;
 	background-color: #ffffff;
 }
 
@@ -102,7 +103,7 @@ nav.navbar {
 }
 
 /* article {
-       max-width: 65%; 
+       max-width: 65%;
 /* } */ /* comente este estilo porque me estaba rompiendo el footer en myaccount.html */
 
 #carouselExampleCaptions {
@@ -190,7 +191,8 @@ a:hover {
 }
 .nav-link:hover {
 	border-radius: 3px;
-	background-color: #c3abbe;
+	background-color: #white;
+	color: black;
 	/* border-bottom: 4px solid #c3abbe; */
 }
 

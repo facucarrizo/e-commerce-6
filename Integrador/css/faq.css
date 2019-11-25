@@ -4,7 +4,6 @@
 	margin-bottom: 0.5%;
 }
 #navHorizontal {
-	margin-top: 7%;
 	width: 100%;
 	background-color: black;
 	font-size: 100%;
@@ -18,11 +17,12 @@ h4 {
 }
 #preg:hover {
 	color: red;
+	color: black;
 }
 #bottonNavHorizontal {
 	color: white;
 	font-weight: bold;
 }
 #bottonNavHorizontal:hover {
-	color: red;
+	color: #c3abbe;
 }
