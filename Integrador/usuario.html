@@ -237,7 +237,7 @@
                                 </tr></thead>
                                 <tbody>
                                                                             <tr>
-                                            <td>home</td>
+                                            <td>Casa</td>
                                             <td>Tte. Gral. J. D. Perón 1730</td>
                                             <td>Tte. Gral. J. D. Perón 1730</td>
                                             <td></td>
@@ -250,8 +250,8 @@
                                                     <div class="btn-group">
                                                         <input type="hidden" name="_method" value="delete">
                                                         <input type="hidden" name="_token" value="HDtXA86dfpZzb97wkjnrjjp50OZFw9SoK7tmbFIP">
-                                                        <a href="" class="btn btn-primary"> <i class="fa fa-pencil"></i> Edit</a>
-                                                        <button onclick="return confirm('Are you sure?')" type="submit" class="btn btn-danger"> <i class="fa fa-trash"></i> Delete</button>
+                                                        <a href="" class="btn btn-primary"> <i class="fa fa-pencil"></i> Editar</a>
+                                                        <button onclick="return confirmar('Are you sure?')" type="submit" class="btn btn-danger"> <i class="fa fa-trash"></i> Eliminar</button>
                                                     </div>
                                                 </form>
                                             </td>
@@ -315,7 +315,7 @@
 		<figure class="itemside">
 			<div class="aside"><img src="img/images2.jfif" class="img-sm"></div>
 			<figcaption class="info">
-				<a href="#" class="title text-dark">Some name of item goes here nice</a>
+				<a href="#" class="title text-dark">Nombre del Producto</a>
 				<p class="text-muted small">Talle: XL, Color: Azul, <br> Marca: Gucci</p>
 			</figcaption>
 		</figure>
@@ -373,7 +373,7 @@
 		<figure class="itemside">
 			<div class="aside"><img src="img/images.jfif" class="img-sm"></div>
 			<figcaption class="info">
-				<a href="#" class="title text-dark">Another name of some product goes just here</a>
+				<a href="#" class="title text-dark">Nombre del Producto</a>
 				<p class="small text-muted">Talle: XL, Color: Azul, <br> Marca: Gucci</p>
 			</figcaption>
 		</figure>
@@ -419,7 +419,7 @@
                                 <tr id="text-uppercase">
                                     <td >Date</td>
                                     <td>Total</td>
-                                    <td>Status</td>
+                                    <td>Estado</td>
                                 </tr>
                                 </tbody>
                                 <tbody>
@@ -432,26 +432,27 @@
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                                            <h4 class="modal-title" id="myModalLabel">Reference #59bb23ae-a6a8-4225-a4ea-ee96f83bdf2f</h4>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                                            </button>
+                                                            <h4 style="text-align: center;" class="modal-title" id="myModalLabel">Numero de Referencia#59bb23ae-a6a8-4225-a4ea-ee96f83bdf2f</h4>
                                                         </div>
                                                         <div class="modal-body">
                                                             <table class="table">
                                                                 <thead>
-                                                                    <tr><th>Address</th>
-                                                                    <th>Payment Method</th>
+                                                                    <tr><th>Direccion</th>
+                                                                    <th>Metodo de Pago</th>
                                                                     <th>Total</th>
-                                                                    <th>Status</th>
+                                                                    <th>Estado</th>
                                                                 </tr></thead>
                                                                 <tbody>
                                                                     <tr>
                                                                         <td>
                                                                             <address>
-                                                                                <strong>home</strong><br>
+                                                                                <strong>Casa</strong><br>
                                                                                 Tte. Gral. J. D. Perón 1730 Piso 13 Dpto. "115"<br>
                                                                             </address>
                                                                         </td>
-                                                                        <td>bank transfer</td>
+                                                                        <td>Transferecia Bancaria</td>
                                                                         <td>$ 5.00</td>
                                                                         <td><p class="text-center" style="color: #000000; background-color:rgb(211, 197, 77)">Comprado</p></td>
                                                                     </tr>
@@ -459,7 +460,7 @@
                                                             </table>
                                                         </div>
                                                         <div class="modal-footer">
-                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerra</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -524,7 +525,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalCenterTitle">Nueva Direccion</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -536,19 +537,19 @@
                 <div class="box-body">
                     <input type="hidden" name="_token" value="7j8cbkgujgr76T0YHq9DiHbbw2jxAwTpemFwRW0P">
                     <div class="form-group">
-                        <label for="alias">Alias <span class="text-danger">*</span></label>
-                        <input type="text" name="alias" id="alias" placeholder="Home or Office" class="form-control" value="">
+                        <label for="alias">Nombre <span class="text-danger">*</span></label>
+                        <input type="text" name="alias" id="alias" placeholder="Casa u Oficina" class="form-control" value="">
                     </div>
                     <div class="form-group">
-                        <label for="address_1">Address 1 <span class="text-danger">*</span></label>
-                        <input type="text" name="address_1" id="address_1" placeholder="Address 1" class="form-control" value="">
+                        <label for="address_1">Direccion 1 <span class="text-danger">*</span></label>
+                        <input type="text" name="address_1" id="address_1" placeholder="Direccion 1" class="form-control" value="">
                     </div>
                     <div class="form-group">
-                        <label for="address_2">Address 2 </label>
-                        <input type="text" name="address_2" id="address_2" placeholder="Address 2" class="form-control" value="">
+                        <label for="address_2">Direccion 2 </label>
+                        <input type="text" name="address_2" id="address_2" placeholder="Direccion 2" class="form-control" value="">
                     </div>
                     <div class="form-group">
-                        <label for="country_id">Country </label>
+                        <label for="country_id">Pais </label>
                         <select name="country_id" id="country_id" class="form-control select2 select2-hidden-accessible" data-select2-id="country_id" tabindex="-1" aria-hidden="true">
                                                             <option value="1" data-select2-id="3">AFGHANISTAN</option>
                                                             <option value="2" data-select2-id="4">ALBANIA</option>
@@ -559,7 +560,7 @@
                                                             <option value="7" data-select2-id="9">ANGUILLA</option>
                                                             <option value="8" data-select2-id="10">ANTARCTICA</option>
                                                             <option value="9" data-select2-id="11">ANTIGUA AND BARBUDA</option>
-                                                            <option value="10" data-select2-id="12">ARGENTINA</option>
+                                                            <option selected="selected" value="10" data-select2-id="12">ARGENTINA</option>
                                                             <option value="11" data-select2-id="13">ARMENIA</option>
                                                             <option value="12" data-select2-id="14">ARUBA</option>
                                                             <option value="13" data-select2-id="15">AUSTRALIA</option>
@@ -718,7 +719,7 @@
                                                             <option value="166" data-select2-id="168">PAPUA NEW GUINEA</option>
                                                             <option value="167" data-select2-id="169">PARAGUAY</option>
                                                             <option value="168" data-select2-id="170">PERU</option>
-                                                            <option selected="selected" value="169" data-select2-id="2">PHILIPPINES</option>
+                                                            <option  value="169" data-select2-id="2">PHILIPPINES</option>
                                                             <option value="170" data-select2-id="171">PITCAIRN</option>
                                                             <option value="171" data-select2-id="172">POLAND</option>
                                                             <option value="172" data-select2-id="173">PORTUGAL</option>
@@ -789,18 +790,16 @@
                                                             <option value="237" data-select2-id="238">YEMEN</option>
                                                             <option value="238" data-select2-id="239">ZAMBIA</option>
                                                             <option value="239" data-select2-id="240">ZIMBABWE</option>
-                                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="245" style="width: 1140px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-country_id-container"><span class="select2-selection__rendered" id="select2-country_id-container" role="textbox" aria-readonly="true" title="PHILIPPINES">PHILIPPINES</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="245" style="width: 1140px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-country_id-container"><span class="select2-selection__rendered" id="select2-country_id-container" role="textbox" aria-readonly="true" title="PHILIPPINES"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                     </div>
-                    <div id="provinces" class="form-group" ><label for="province_id">Provinces </label><select name="province_id" id="province_id" class="form-control select2 select2-hidden-accessible" data-select2-id="province_id" tabindex="-1" aria-hidden="true"><option value="1" data-select2-id="244">Abra</option><option value="2" data-select2-id="247">Agusan del Norte</option><option value="3" data-select2-id="248">Agusan del Sur</option><option value="4" data-select2-id="249">Aklan</option><option value="5" data-select2-id="250">Albay</option><option value="6" data-select2-id="251">Antique</option><option value="7" data-select2-id="252">Apayao</option><option value="8" data-select2-id="253">Aurora</option><option value="9" data-select2-id="254">Basilan</option><option value="10" data-select2-id="255">Bataan</option><option value="11" data-select2-id="256">Batanes</option><option value="12" data-select2-id="257">Batangas</option><option value="13" data-select2-id="258">Benguet</option><option value="14" data-select2-id="259">Biliran</option><option value="15" data-select2-id="260">Bohol</option><option value="16" data-select2-id="261">Bukidnon</option><option value="17" data-select2-id="262">Bulacan</option><option value="18" data-select2-id="263">Cagayan</option><option value="19" data-select2-id="264">Camarines Norte</option><option value="20" data-select2-id="265">Camarines Sur</option><option value="21" data-select2-id="266">Camiguin</option><option value="22" data-select2-id="267">Capiz</option><option value="23" data-select2-id="268">Catanduanes</option><option value="24" data-select2-id="269">Cavite</option><option value="25" data-select2-id="270">Cebu</option><option value="26" data-select2-id="271">Compostela Valley</option><option value="27" data-select2-id="272">Cotabato</option><option value="28" data-select2-id="273">Davao del Norte</option><option value="29" data-select2-id="274">Davao del Sur</option><option value="30" data-select2-id="275">Davao Oriental</option><option value="31" data-select2-id="276">Eastern Samar</option><option value="32" data-select2-id="277">Guimaras</option><option value="33" data-select2-id="278">Ifugao</option><option value="34" data-select2-id="279">Ilocos Norte</option><option value="35" data-select2-id="280">Ilocos Sur</option><option value="36" data-select2-id="281">Iloilo</option><option value="37" data-select2-id="282">Isabela</option><option value="38" data-select2-id="283">Kalinga</option><option value="39" data-select2-id="284">La Union</option><option value="40" data-select2-id="285">Laguna</option><option value="41" data-select2-id="286">Lanao del Norte</option><option value="42" data-select2-id="287">Lanao del Sur</option><option value="43" data-select2-id="288">Leyte</option><option value="44" data-select2-id="289">Maguindanao</option><option value="45" data-select2-id="290">Marinduque</option><option value="46" data-select2-id="291">Masbate</option><option value="47" data-select2-id="292">Metro Manila</option><option value="48" data-select2-id="293">Misamis Occidental</option><option value="49" data-select2-id="294">Misamis Oriental</option><option value="50" data-select2-id="295">Mountain Province</option><option value="51" data-select2-id="296">Negros Occidental</option><option value="52" data-select2-id="297">Negros Oriental</option><option value="53" data-select2-id="298">Northern Samar</option><option value="54" data-select2-id="299">Nueva Ecija</option><option value="55" data-select2-id="300">Nueva Vizcaya</option><option value="56" data-select2-id="301">Occidental Mindoro</option><option value="57" data-select2-id="302">Oriental Mindoro</option><option value="58" data-select2-id="303">Palawan</option><option value="59" data-select2-id="304">Pampanga</option><option value="60" data-select2-id="305">Pangasinan</option><option value="61" data-select2-id="306">Quezon</option><option value="62" data-select2-id="307">Quirino</option><option value="63" data-select2-id="308">Rizal</option><option value="64" data-select2-id="309">Romblon</option><option value="65" data-select2-id="310">Samar</option><option value="66" data-select2-id="311">Sarangani</option><option value="67" data-select2-id="312">Siquijor</option><option value="68" data-select2-id="313">Sorsogon</option><option value="69" data-select2-id="314">South Cotabato</option><option value="70" data-select2-id="315">Southern Leyte</option><option value="71" data-select2-id="316">Sultan Kudarat</option><option value="72" data-select2-id="317">Sulu</option><option value="73" data-select2-id="318">Surigao del Norte</option><option value="74" data-select2-id="319">Surigao del Sur</option><option value="75" data-select2-id="320">Tarlac</option><option value="76" data-select2-id="321">Tawi-Tawi</option><option value="77" data-select2-id="322">Zambales</option><option value="78" data-select2-id="323">Zamboanga del Norte</option><option value="79" data-select2-id="324">Zamboanga del Sur</option><option value="80" data-select2-id="325">Zamboanga Sibugay</option></select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="326" style="width: 1140px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-province_id-container"><span class="select2-selection__rendered" id="select2-province_id-container" role="textbox" aria-readonly="true" title="Abra">Abra</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
-                    <div id="cities" class="form-group" ><label for="city_id">City </label><select name="city_id" id="city_id" class="form-control select2 select2-hidden-accessible" data-select2-id="city_id" tabindex="-1" aria-hidden="true"><option value="undefined" data-select2-id="329">Bangued</option><option value="undefined">Boliney</option><option value="undefined">Bucay</option><option value="undefined">Bucloc</option><option value="undefined">Daguioman</option><option value="undefined">Danglas</option><option value="undefined">Dolores</option><option value="undefined">La Paz</option><option value="undefined">Lacub</option><option value="undefined">Lagangilang</option><option value="undefined">Lagayan</option><option value="undefined">Langiden</option><option value="undefined">Licuan-Baay</option><option value="undefined">Luba</option><option value="undefined">Malibcong</option><option value="undefined">Manabo</option><option value="undefined">Peñarrubia</option><option value="undefined">Pidigan</option><option value="undefined">Pilar</option><option value="undefined">Sallapadan</option><option value="undefined">San Isidro</option><option value="undefined">San Juan</option><option value="undefined">San Quintin</option><option value="undefined">Tayum</option><option value="undefined">Tineg</option><option value="undefined">Tubo</option><option value="undefined">Villaviciosa</option></select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="328" style="width: 1140px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-city_id-container"><span class="select2-selection__rendered" id="select2-city_id-container" role="textbox" aria-readonly="true" title="Bangued">Bangued</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                    <div id="provinces" class="form-group" ><label for="province_id">Ciudad </label><select name="province_id" id="province_id" class="form-control select2 select2-hidden-accessible" data-select2-id="province_id" tabindex="-1" aria-hidden="true"> 
+                      <option selected="selected" value="10" data-select2-id="12">Buenos Aires</option>
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="328" style="width: 1140px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-city_id-container"><span class="select2-selection__rendered" id="select2-city_id-container" role="textbox" aria-readonly="true" title="Bangued"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
                     <div class="form-group">
-                        <label for="zip">Zip Code </label>
-                        <input type="text" name="zip" id="zip" placeholder="Zip code" class="form-control" value="">
+                        <label for="zip">Codigo Postal </label>
+                        <input type="text" name="zip" id="zip" placeholder="Codigo Postal" class="form-control" value="">
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Your Phone </label>
-                        <input type="text" name="phone" id="phone" placeholder="Phone number" class="form-control" value="">
-                    </div>
+                   
                 </div>
                 <!-- /.box-body -->
                 

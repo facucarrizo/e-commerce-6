@@ -38,9 +38,10 @@
  
 }
 
-@media (min-width: 375px) and (max-width: 767.98px) { #Todo{
+@media (min-width: 100px) and (max-width: 767.98px) { 
+    #Todo{
     padding-left: 1%;
-    margin-left: 0%;
+    margin:auto;
     width: auto;
     background-color:rgba(0, 0, 0, 0.795);
     color: white;
