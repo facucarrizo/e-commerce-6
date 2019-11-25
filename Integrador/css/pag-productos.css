@@ -1,7 +1,7 @@
 html,body {
     width: 100%;
     height: 100%;
-    background-image: url(https://images3.alphacoders.com/100/1008404.jpg);
+   
 }
 
 .opciones {
@@ -76,13 +76,13 @@ height: 30%;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.411);
 }
-p{
+ #Precio{
     width: 90%;
     color:rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.411);
 }
 
-i{
+.producto i{
     color: rgb(238, 255, 0);
     font-size: 15px;
 }
