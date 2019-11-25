@@ -50,13 +50,53 @@
 				<span class="badge badge-pill badge-danger notify">0</span>
 			</div>
 			<div class="widget-header icontext">
-				<a href="usuario.html" class="mr-3 icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a>
+				<a href="usuario.html" class="mr-3 icon icon-sm rounded-circle border" style="margin-top:3% ;"><i class="fa fa-user"></i></a>
 				<div class="text">
-					<span class="text-muted">Bienvenido!</span>
-					<div> 
-						<a href="Formulario Registro.html">Iniciar sesión</a> |  
-						<a href="Formulario Registro.html"> Registrarse</a>
-					</div>
+ <!-- HEAD -->
+					<span style="margin-left:45% ; margin-top:100px; margin-bottom:0% ;" class="text-muted">Bienvenido!</span> 
+            <nav aria-label="breadcrum">
+              <ol class="breadcrum">
+             
+                  <button type="button" style="text-shadow: none; color: purple; background-color: white; border: none; padding: 0%; margin: 0%; margin-right:5px; " class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="background: none; border: none; color: white;">Iniciar Sesion</button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Email</label>
+                                <input type="text" class="form-control" id="recipient-name" required>
+                                <small id="emailHelp" class="form-text text-muted">No compartiremos tu direccion de Email</small>
+                              </div>
+                              <div class="form-group">
+                                <label for="message-text" class="col-form-label">Contraseña</label>
+                                <input type="password" class="form-control" required>
+                                <br>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                                  </div>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            
+                    | 
+            
+						<a href="Formulario Registro.html" style="color: purple; margin-left:5px ; text-decoration: none;"> Registrarse</a>
+				
 				</div>
 			</div>
 		</div>
