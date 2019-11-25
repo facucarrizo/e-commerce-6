@@ -117,7 +117,7 @@ nav.navbar {
 		z-index: 200;
 }
 
-#carouselExampleCaptions h5, p {
+#carouselExampleCaptions h5 {
 	text-shadow: 0.5px 0 0 #000, -0.5px 0 0 #000, 0 0.5px 0 #000, 0 -0.5px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 	color: white;
 }
@@ -125,6 +125,10 @@ nav.navbar {
    font-size: 22px;
 }
 
+#carouselExampleCaptions p {
+	text-shadow: 0.5px 0 0 #000, -0.5px 0 0 #000, 0 0.5px 0 #000, 0 -0.5px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+	color: white;
+}
 
 
 /* CSS menu nuevo */
