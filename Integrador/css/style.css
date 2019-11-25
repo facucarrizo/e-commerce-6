@@ -35,18 +35,21 @@ body {
 	z-index: 100;
 }
 
+
 /* Barra navegaciòn */
 
 nav.navbar {
 	background-color: #ffffff;
 	height: 20vh;
 }
-.nav-link{
+#dos{
 	margin: 1%;
 	font-weight: bold;
-	padding-top:1% ;
-	margin-left:4% ;
-
+	
+}
+#dos:hover{
+	background-color: #fff;
+	color: #955c8a;
 }
 .dropdown-menu {
 	background-color: #c3abbe;
@@ -222,9 +225,9 @@ a:hover {
 }
 .nav-link:hover {
 	border-radius: 3px;
-	background-color: #white;
+	background-color:  #be97b7;
 	color: black;
-	/* border-bottom: 4px solid #c3abbe; */
+	
 }
 
 .w-ico {
