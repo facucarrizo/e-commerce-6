@@ -1,0 +1,88 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images3.alphacoders.com/100/1008404.jpg);
+}
+
+.opciones {
+float: left;
+background-color: black;
+margin-left: 7%;
+margin-top: 2%;
+width: 13%;
+height: 30%;
+}
+
+.barra ul {
+    list-style: none;
+}
+
+
+.barra li{
+    padding: 5px;
+    margin-top: 7%;
+    color: white;
+}
+
+
+.zapatillas {
+    margin-left:25% ;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 70%;
+    padding: 2%;
+    height: 100%;
+    background-color: rgba(3, 3, 3, 0.171);
+    overflow: hidden;
+}
+
+
+
+
+.caja-productos {
+    width: 30%;
+    margin-top: 1%;
+    float: left;
+    transition: 1s;
+    margin: 0 1%;
+}
+
+.producto img{
+    width: 10%;
+}
+
+
+.caja-productos:hover{
+    transform: scale(1.2);
+}
+
+
+.producto {
+    padding: 2%;
+}
+
+
+
+.producto img {
+    width: 100%;
+    height:80%;
+  padding: 7%;
+}
+
+ .producto h2{
+    font-size:25px;
+    width: 90%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.411);
+}
+p{
+    width: 90%;
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+i{
+    color: rgb(238, 255, 0);
+    font-size: 15px;
+}

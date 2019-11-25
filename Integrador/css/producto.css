@@ -1,0 +1,86 @@
+body{
+    background-image: url(https://images5.alphacoders.com/356/thumb-1920-356885.jpg);
+}
+
+.contenedor-tarjeta{
+    background-color: black;
+}
+
+img {
+    min-width: 100%;
+    min-height: 100%;
+    float: left;
+}
+
+.container-card {
+    margin: 0 auto;
+    width: 80%;
+    max-height: 40%;
+    margin-top: 3%;
+    margin-bottom: 3%;;
+    padding: 15px;
+    background-color: rgb(0, 0, 0,0.795);
+}
+
+.newarrival {
+    background: green;
+    width: 50px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.col-md-7 h2{
+    color: rgb(255, 255, 255);
+}
+
+.estrellas{
+    margin-left: 30%;
+}
+
+.col-md-7 i {
+    color: yellow;
+    
+}
+
+.precio {
+    color: white;
+    font-size: 20px;
+    margin-left: 32%;
+}
+
+ul{
+    list-style: none;
+}
+
+
+#accordionExample {
+    width:90%;
+}
+
+.accordion {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.talles h3{
+    color: goldenrod;
+    font-size: 150%;
+    margin-left: 20%;
+}
+ 
+
+
+.precioypago {
+    margin-left: 1%;
+}
+
+
+.tarj{
+    width: 5%;
+    margin-top: 1%;
+}
+
+.pag-met {
+    height: 2%;
+}
