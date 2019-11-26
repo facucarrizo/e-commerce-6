@@ -45,7 +45,7 @@ nav.navbar {
 #dos{
 	margin: 1%;
 	font-weight: bold;
-	
+
 }
 #dos:hover{
 	background-color: #fff;
@@ -116,6 +116,10 @@ nav.navbar {
 
 #seguinos {
 	text-align: right;
+}
+.page-footer a {
+		color: black;
+		/* text-decoration: none; */
 }
 
 /* article {
@@ -227,7 +231,7 @@ a:hover {
 	border-radius: 3px;
 	background-color:  #be97b7;
 	color: black;
-	
+
 }
 
 .w-ico {
