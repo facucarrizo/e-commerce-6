@@ -20,6 +20,18 @@ body {
 	font-weight: bold;
 	transform: scale(1.1);
 }
+#linkedin {
+color: #0e76a8;
+}
+#twitter {
+	color: #00acee;
+}
+#facebook {
+	color:#3b5998;
+}
+#instagram {
+	color: #C13584;
+}
 
 #aa {
 	transition: transform 0.2s;
