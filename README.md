@@ -2,8 +2,8 @@
 
 Proyecto Integrador DH
 
-Luciano Astegiano
-Zoe Bussola
-Facundo Carrizo
-Agustina Gigena
-Fernando Sardone
+Luciano Astegiano,
+Zoe Bussola,
+Facundo Carrizo,
+Agustina Gigena,
+Fernando Sardone.
