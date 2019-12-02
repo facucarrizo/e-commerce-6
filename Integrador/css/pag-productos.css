@@ -31,13 +31,13 @@ height: 30%;
     margin:0 auto;
     margin-top: 2%;
     margin-bottom: 2%;
-    width: 84%;
+    width: 80%;
     background-color: rgba(3, 3, 3, 0.171);
 }
 
 #nomb h2 {
- font-size: 30px;
-}
+    font-size: 30px;
+   }
 
 .producto img{
     width: 10%;
@@ -50,9 +50,9 @@ height: 30%;
 
 /*cORRREGIR*/
 #hola{
-    width:30%;
+    width:25%;
     transition: 1.1s;
-    margin: 6%;
+    margin: 3%;
     padding: 3%;
     float: left;
    
@@ -65,7 +65,7 @@ width: 100%;
 }
 
 .producto {
-    padding: 2%;
+    padding: 1%;
 }
 
 #dos {
@@ -117,4 +117,8 @@ width: 100%;
 .iconitos{
     background-color: white;
     font-size:30px;
+}
+
+#hoy {
+    width: 100%;
 }
