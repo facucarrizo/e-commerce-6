@@ -228,9 +228,11 @@
 
 
 
-
-
+<!-- FOOTER: EMPIEZA -->
 <?php require_once 'footer.php';  ?>
+<!-- FOOTER: TERMINA -->
+
+
 
 </div>
 
