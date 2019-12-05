@@ -24,7 +24,7 @@ if ($_POST) {
       $user= json_decode($usuario, true);
       if ($user["mail"]== $_POST["mail"]) {
         if (password_verify($_POST["contraseña"],$user["contraseña"])) {
-          // header("location:home.php");
+          // header("location:pag registro.php");
         }
       }
     }
@@ -53,7 +53,7 @@ if ($_POST) {
 </head>
 <body >
 <?php require_once"NAV.php" ?>
-    <a href="Contacto.html" id="aa" > Contactanos</a>
+    <a href="Contacto.php" id="aa" > Contactanos</a>
   <!-- Header -->
  
 
@@ -342,22 +342,26 @@ if ($_POST) {
 
         <div class="col-md-2 mb-3">
           <label for="validationDefault03">Ciudad</label>
-          <input type="text" class="form-control" id="validationDefault03" placeholder="Ciudad" >
+          <input type="text" class="form-control" id="validationDefault03" placeholder="Ciudad" name="ciudad" value="<?= persistirDato($arraydeerrores, 'ciudad'); ?>">
+          <small><?= isset($arraydeerrores["ciudad"])? $arraydeerrores["ciudad"]:"" ?></small>
         </div>
       <div class="col-md-3 mb-3">
         <label for="validationDefault04">Barrio</label>
-        <input type="text" class="form-control" id="validationDefault04" placeholder="Barrio" >
+        <input type="text" class="form-control" id="validationDefault04" placeholder="Barrio" name="barrio" value="<?= persistirDato($arraydeerrores, 'barrio'); ?>" >
+        <small><?= isset($arraydeerrores["barrio"])? $arraydeerrores["barrio"]:"" ?></small>
       </div>
       <div class="col-md-2 mb-3">
         <label for="validationDefault05">Codigo Postal</label>
-        <input type="number" min="1000"  max="9999" class="form-control" id="validationDefault05" placeholder="Codigo Postal" >
+        <input type="number" min="1000"  max="9999" class="form-control" id="validationDefault05" placeholder="Codigo Postal" name="postal" value="<?= persistirDato($arraydeerrores, 'postal'); ?>" >
+        <small><?= isset($arraydeerrores["postal"])? $arraydeerrores["postal"]:"" ?></small>
       </div>
       <div class="col-md-2 mb-3">
-          <label for="validationDefault05">Año de Nacimiento</label>
-          <input type="number" min="1950"  max="2019" class="form-control" id="validationDefault05" placeholder="2000" >
+          <label for="validationDefault05" >Año de Nacimiento</label>
+          <input type="number" min="1950"  max="2019" class="form-control" id="validationDefault05" placeholder="2000" name="nacimiento" value="<?= persistirDato($arraydeerrores, 'nacimiento'); ?>">
+          <small><?= isset($arraydeerrores["nacimiento"])? $arraydeerrores["nacimiento"]:"" ?></small>
         </div>
         <div class="custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1" require>
             <label class="custom-control-label" for="customSwitch1">Tengo más de 18 años</label>
           </div>
 

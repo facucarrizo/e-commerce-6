@@ -1,0 +1,13 @@
+#Boton{
+      width: 16%;
+      text-align: center;
+      position: absolute;
+      left: 600px;
+}
+.jumbotron{
+    margin-top: 10%;
+   
+    color: white;
+    font-family: 'Tomorrow', sans-serif;
+    text-align: center;
+}

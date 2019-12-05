@@ -27,7 +27,7 @@
     width: 80%;
     height: 100%;
     background-color:rgba(0, 0, 0, 0.795);
-    color: white;
+color: white;
     margin-left: 10%; 
     margin-top: 5%;
     margin-bottom: 10%;
@@ -37,6 +37,9 @@
     padding-right: 2%;
  
 }
+small{
+    color: rgb(223, 43, 43);
+}
 
 @media (min-width: 100px) and (max-width: 767.98px) { 
     #Todo{
@@ -45,7 +48,6 @@
     width: auto;
     background-color:rgba(0, 0, 0, 0.795);
     color: white;
-  
    
  
 } } 
