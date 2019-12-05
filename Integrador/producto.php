@@ -14,7 +14,7 @@
 </head>
 <body>
 
-  <a href="Contacto.html" id="aa" > Contactanos</a>
+  <a href="Contacto.php" id="aa" > Contactanos</a>
   <!-- Header -->
   <div class="">
   <?php require_once"NAV.php" ?>
@@ -40,7 +40,7 @@
 
      <div id="hola" class="card" style="width: 18rem;">
 
-       <a href="perfilproducto.html"> <img id="hola2" src="img/nike-1.jpg" class="card-img-top" alt="..."></a>
+       <a href="perfilproducto.php"> <img id="hola2" src="img/nike-1.jpg" class="card-img-top" alt="..."></a>
 
 
 
@@ -70,7 +70,7 @@
 
 
       <div id="hola" class="card" style="width: 18rem;">
-          <a href="perfilproducto.html">
+          <a href="perfilproducto.php">
           <img id="hola2" src="img/nike-2.jpg" class="card-img-top" alt="..."></a>
           <div class="card-body">
 
@@ -98,7 +98,7 @@
         </div>
 
         <div id="hola" class="card" style="width: 18rem;">
-            <a href="perfilproducto.html"><img id="hola2" src="img/nike-4.jpg" class="card-img-top" alt="..."></a>
+            <a href="perfilproducto.php"><img id="hola2" src="img/nike-4.jpg" class="card-img-top" alt="..."></a>
             <div class="card-body">
 
               <div id="nomb">
@@ -165,10 +165,10 @@
                     <a href="#" style="text-decoration:none">Nuestra historia</a>
                   </p>
                   <p>
-                    <a href="Formulario Registro.html" style="text-decoration:none">Como suscribirse</a>
+                    <a href="Formulario Registro.php" style="text-decoration:none">Como suscribirse</a>
                   </p>
                   <p>
-                    <a href="faq.html" style="text-decoration:none">Preguntas frecuentes</a>
+                    <a href="faq.php" style="text-decoration:none">Preguntas frecuentes</a>
                   </p>
                   <p>
                     <a href="#" style="text-decoration:none">Trabaja en nuestro equipo</a>
@@ -184,13 +184,13 @@
                   <h6 class="text-uppercase font-weight-bold">Productos</h6>
                   <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                   <p>
-                    <a href="producto.html" style="text-decoration:none">Nike</a>
+                    <a href="producto.php" style="text-decoration:none">Nike</a>
                   </p>
                   <p>
-                    <a href="producto-adidas.html" style="text-decoration:none">Adidas</a>
+                    <a href="producto-adidas.php" style="text-decoration:none">Adidas</a>
                   </p>
                   <p>
-                    <a href="producto-vans.html" style="text-decoration:none">Vans</a>
+                    <a href="producto-vans.php" style="text-decoration:none">Vans</a>
                   </p>
 
                 </div>

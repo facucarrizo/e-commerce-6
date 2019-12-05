@@ -14,7 +14,7 @@
 </head>
 <body>
 
-  <a href="Contacto.html" id="aa" > Contactanos</a>
+  <a href="Contacto.php" id="aa" > Contactanos</a>
   <!-- Header -->
   <div class="">
   <?php require_once"NAV.php" ?>
@@ -37,7 +37,7 @@
 
 
      <div id="hola" class="card" style="width: 18rem;">
-       <a href="perfilproducto.html"> <img id="hola2" src="img/adidas-1.jpg" class="card-img-top" alt="..."></a>
+       <a href="perfilproducto.php"> <img id="hola2" src="img/adidas-1.jpg" class="card-img-top" alt="..."></a>
 
 
 
@@ -67,7 +67,7 @@
 
 
       <div id="hola" class="card" style="width: 18rem;">
-            <a href="perfilproducto.html">  <img id="hola2" src="img/adidas-2" class="card-img-top" alt="..."></a>
+            <a href="perfilproducto.php">  <img id="hola2" src="img/adidas-2" class="card-img-top" alt="..."></a>
           <div class="card-body">
 
             <div id="nomb">
@@ -94,7 +94,7 @@
         </div>
 
         <div id="hola" class="card" style="width: 18rem;">
-                <a href="perfilproducto.html"> <img id="hola2" src="img/adidas-3.jpg" class="card-img-top" alt="..."></a>
+                <a href="perfilproducto.php"> <img id="hola2" src="img/adidas-3.jpg" class="card-img-top" alt="..."></a>
             <div class="card-body">
 
               <div id="nomb">
@@ -134,4 +134,4 @@
  
 
 </body>
-</html>
+</htmls>

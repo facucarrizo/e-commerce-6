@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/67f61afa3e.js" crossorigin="anonymous"></script>
   <title>CASBUSAGI - Zapatillas al paso</title>
-  <link rel="stylesheet" href="css/style.css">
+ 
 </head>
 <body>
     <a href="Contacto.php" id="aa" > Contactanos</a>
@@ -72,18 +73,21 @@
 
 
          </ul>
-
+<div style="padding=5%">
       <div class="widgets-wrap float-md-right">
     <div class="widget-header  mr-3">
       <a href="carrito.php" class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></a>
-      <span class="badge badge-pill badge-danger notify">0</span>
-    </div>
+      <span class=" badge-pill badge-danger notify">0</span> 
+ </div>
+      <div class="widget-header  mr-3">
+      <a href="usuario.php" class="mr-3 icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a>
+    </div> 
     <div class="widget-header icontext">
-      <a href="usuario.php" class="mr-3 icon icon-sm rounded-circle border" style="margin-top:3% ;"><i class="fa fa-user"></i></a>
+      
       <div class="text">
         <span style="margin-left:45% ;" class="text-muted">¡Bienvenido!</span>
         <div>
-
+        </div>
           <nav aria-label="breadcrum">
             <ol class="breadcrum">
 

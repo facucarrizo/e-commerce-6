@@ -170,10 +170,6 @@ nav.navbar {
 	position: relative;
 }
 
-.mr-3,
-.mx-3 {
-	margin-right: 1rem !important;
-}
 
 .widget-header a {
 	color: #955c8a;
