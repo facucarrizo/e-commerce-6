@@ -201,7 +201,7 @@ figure {
   color: #e6dce4;
 }
 .list-group-item {
-  background-color: #d5e8cb;
+  background-color: #d5e8cb !important;
 }
 
 @media (max-width: 992px) {
