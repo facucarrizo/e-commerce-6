@@ -189,8 +189,8 @@ figure {
 
 /* css USUARIO */
 
-.list-group-item > .card-account {
-  background-color: #d5e8cb !important;
+.card-account {
+  background-color: #d5e8cb;
 }
 
 .fa-user:hover {
@@ -199,6 +199,9 @@ figure {
 
 .fa-shopping-cart:hover {
   color: #e6dce4;
+}
+.list-group-item {
+  background-color: #d5e8cb;
 }
 
 @media (max-width: 992px) {
