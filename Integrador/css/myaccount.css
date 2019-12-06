@@ -190,7 +190,7 @@ figure {
 /* css USUARIO */
 
 .list-group-item > .card-account {
-  background-color: #d5e8cb;
+  background-color: #d5e8cb !important;
 }
 
 .fa-user:hover {
