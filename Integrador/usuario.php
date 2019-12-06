@@ -28,6 +28,7 @@
 
   <body>
       <a href="Contacto.html" id="aa" > Contactanos</a>
+      <div class="mx-5">
       <?php require_once"NAV.php" ?>
 
 
