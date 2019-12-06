@@ -189,7 +189,7 @@ figure {
 
 /* css USUARIO */
 
-.card-account {
+.list-group-item > .card-account {
   background-color: #d5e8cb;
 }
 
