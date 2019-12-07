@@ -188,6 +188,7 @@ figure {
 }
 
 /* css USUARIO */
+
 a:hover {
 	text-decoration: none !important;
 	font-weight: 500 !important;
@@ -197,8 +198,10 @@ a:hover {
 	border: none !important;
 }
 .list-group-item.active {
+	font-weight: 500 !important;
 	color: #28a745 !important;
-	border-color: #27a745 !important;
+
+	background-color: #b9e8c4 !important;
 }
 
 .card-account {

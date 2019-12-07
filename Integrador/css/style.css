@@ -1,7 +1,7 @@
 /* Body fondo de pantalla */
 
 body {
-/*
+	/*
 	background-image: url(https://images3.alphacoders.com/100/1008404.jpg);
 
 
@@ -21,16 +21,16 @@ body {
 	transform: scale(1.1);
 }
 #linkedin {
-color: #0e76a8;
+	color: #0e76a8;
 }
 #twitter {
 	color: #00acee;
 }
 #facebook {
-	color:#3b5998;
+	color: #3b5998;
 }
 #instagram {
-	color: #C13584;
+	color: #c13584;
 }
 
 #aa {
@@ -47,19 +47,17 @@ color: #0e76a8;
 	z-index: 100;
 }
 
-
 /* Barra navegaciòn */
 
 nav.navbar {
 	background-color: #ffffff;
 	height: 20vh;
 }
-#dos{
+#dos {
 	margin: 1%;
 	font-weight: bold;
-
 }
-#dos:hover{
+#dos:hover {
 	background-color: #fff;
 	color: #955c8a;
 }
@@ -130,8 +128,8 @@ nav.navbar {
 	text-align: right;
 }
 .page-footer a {
-		color: black;
-		/* text-decoration: none; */
+	color: black;
+	/* text-decoration: none; */
 }
 
 /* article {
@@ -145,22 +143,23 @@ nav.navbar {
 }
 
 #carouselExampleCaptions {
-		z-index: 200;
+	z-index: 200;
 }
 
 #carouselExampleCaptions h5 {
-	text-shadow: 0.5px 0 0 #000, -0.5px 0 0 #000, 0 0.5px 0 #000, 0 -0.5px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+	text-shadow: 0.5px 0 0 #000, -0.5px 0 0 #000, 0 0.5px 0 #000, 0 -0.5px 0 #000,
+		1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 	color: white;
 }
 #carouselExampleCaptions h5 {
-   font-size: 22px;
+	font-size: 22px;
 }
 
 #carouselExampleCaptions p {
-	text-shadow: 0.5px 0 0 #000, -0.5px 0 0 #000, 0 0.5px 0 #000, 0 -0.5px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+	text-shadow: 0.5px 0 0 #000, -0.5px 0 0 #000, 0 0.5px 0 #000, 0 -0.5px 0 #000,
+		1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 	color: white;
 }
-
 
 /* CSS menu nuevo */
 
@@ -169,7 +168,6 @@ nav.navbar {
 	vertical-align: middle;
 	position: relative;
 }
-
 
 .widget-header a {
 	color: #955c8a;
@@ -233,13 +231,13 @@ nav.navbar {
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	color: #28a745;
 }
 .nav-link:hover {
 	border-radius: 3px;
-	background-color:  #be97b7;
+	background-color: #be97b7;
 	color: black;
-
 }
 
 .w-ico {
