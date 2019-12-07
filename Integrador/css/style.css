@@ -232,7 +232,7 @@ nav.navbar {
 
 a:hover {
 	text-decoration: none;
-	color: #28a745;
+	color: #28a745 !important;
 }
 .nav-link:hover {
 	border-radius: 3px;
