@@ -188,9 +188,11 @@ figure {
 }
 
 /* css USUARIO */
-.card-account:hover {
-	background-color: #128223;
+.list-group-item {
+	color: black;
+	border: none;
 }
+
 .card-account {
 	background-color: #d5e8cb;
 }
