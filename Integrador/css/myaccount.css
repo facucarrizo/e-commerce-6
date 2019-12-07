@@ -188,9 +188,17 @@ figure {
 }
 
 /* css USUARIO */
+a:hover {
+	text-decoration: none !important;
+	font-weight: 500 !important;
+}
 .list-group-item {
 	color: black;
-	border: none;
+	border: none !important;
+}
+.list-group-item.active {
+	color: #28a745 !important;
+	border-color: #27a745 !important;
 }
 
 .card-account {
