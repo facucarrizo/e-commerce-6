@@ -229,10 +229,11 @@ nav.navbar {
 		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
 		-webkit-box-shadow 0.15s ease-in-out;
 }
-
+.card-account:hover {
+	color: #28a745 !important;
+}
 a:hover {
 	text-decoration: none;
-	color: #28a745 !important;
 }
 .nav-link:hover {
 	border-radius: 3px;
