@@ -231,6 +231,7 @@ nav.navbar {
 }
 .card-account:hover {
 	color: #28a745 !important;
+	font-weight: 500 !important;
 }
 a:hover {
 	text-decoration: none;

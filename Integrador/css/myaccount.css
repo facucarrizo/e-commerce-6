@@ -190,9 +190,7 @@ figure {
 /* css USUARIO */
 
 a:hover {
-	color: #28a745 !important;
 	text-decoration: none !important;
-	font-weight: 500 !important;
 }
 .list-group-item {
 	color: black;
@@ -205,9 +203,9 @@ a:hover {
 	background-color: #b9e8c4 !important;
 }
 
-.card-account {
+/* .card-account {
 	background-color: #d5e8cb;
-}
+} */
 
 .fa-user:hover {
 	color: #d5e8cb;
