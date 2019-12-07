@@ -51,7 +51,7 @@
               <div class=" list-group" id="myList" role="tablist">
 
                 <a
-                  class="card-account list-group-item"
+                  class="card-account list-group-item bg-color"
                   data-toggle="list"
                   href="#miPerfil"
                   role="tab"
@@ -59,7 +59,7 @@
                   Mi Perfil
                 </a>
                 <a
-                  class="card-account list-group-item"
+                  class="card-account list-group-item bg-color"
                   data-toggle="list"
                   href="#guardados"
                   role="tab"
@@ -67,7 +67,7 @@
                   Guardados
                 </a>
                 <a
-                  class="card-account list-group-item"
+                  class="card-account list-group-item bg-color"
                   data-toggle="list"
                   href="#misCompras"
                   role="tab"
