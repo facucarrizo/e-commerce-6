@@ -232,6 +232,7 @@ nav.navbar {
 .bg-color:hover {
 	color: #28a745 !important;
 	font-weight: 500 !important;
+	border-color: #28a745;
 }
 a:hover {
 	text-decoration: none;
