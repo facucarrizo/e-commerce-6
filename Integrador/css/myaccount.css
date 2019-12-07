@@ -190,6 +190,7 @@ figure {
 /* css USUARIO */
 
 a:hover {
+	color: #28a745 !important;
 	text-decoration: none !important;
 	font-weight: 500 !important;
 }
