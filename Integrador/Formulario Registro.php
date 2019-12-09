@@ -6,12 +6,16 @@ $mail="";
 $arraydeerrores = [];
 if ($_POST) {
   $arraydeerrores = validarregistracion($_POST);
-   if ($arraydeerrores) {
+   if (count($arraydeerrores) == 0) {
      $usuariofinal=[
       "nombre"=>trim($_POST["nombre"]),
       "apellido"=>trim($_POST["apellido"]),
       "mail"=>$_POST["mail"],
-      "contraseña"=>password_hash($_POST["contraseña"], PASSWORD_DEFAULT)
+      "contraseña"=>password_hash($_POST["contraseña"], PASSWORD_DEFAULT),
+      "ciudad"=>$_POST["ciudad"],
+      "barrio"=>$_POST["barrio"],
+      "postal"=>$_POST["postal"],
+      "nacimiento"=>$_POST["nacimiento"]
      ];
     //  pre($usuariofinal);
     //  exit;
@@ -362,14 +366,14 @@ if ($_POST) {
         </div>
         <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="customSwitch1" require>
-            <label class="custom-control-label" for="customSwitch1">Tengo más de 18 años</label>
+            <label class="custom-control-label" for="customSwitch1" require>Tengo más de 18 años</label>
           </div>
 
     </div>
     <div class="form-group">
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" >
-        <label class="form-check-label" for="invalidCheck2">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+        <label class="form-check-label" for="invalidCheck2" required>
           He Leido y acepto Terminos y Condiciones
         </label>
       </div>

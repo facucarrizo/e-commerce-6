@@ -33,9 +33,9 @@
   <body>
       <a href="Contacto.html" id="aa" > Contactanos</a>
     <!-- Header -->
-    <div class="mx-5">
+    
     <?php require_once"NAV.php" ?>
-
+<div class="mx-5">
       <!--!ACA EMPIEZA CARRITO.//-->
       <section class="section-pagetop bg">
         <div class="">

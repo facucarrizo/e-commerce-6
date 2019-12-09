@@ -98,6 +98,7 @@
              }
        if (count($errores)=== 0) {
         header("location:pag registro.php");
+        
        }
     else {
       return $errores;
