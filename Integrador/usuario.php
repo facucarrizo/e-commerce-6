@@ -28,8 +28,9 @@
 
   <body>
       <a href="Contacto.html" id="aa" > Contactanos</a>
-      <div class="mx-5">
-      <?php require_once"NAV.php" ?>
+       <?php require_once"NAV.php" ?>
+      
+     
 
 
 
@@ -40,10 +41,10 @@
         <div class="">
           <h2 class="title-page">Mi Perfil</h2>
         </div>
-
+  </section>
         <!-- container //  -->
-      </section>
-      </section>
+      
+    <div class="mx-5"> 
       <section class="section-content padding-y">
         <div class="">
           <div class="row">
@@ -99,19 +100,20 @@
                           <a href="#" class="btn-link"> Editar</a>
                         </div>
                       </figure>
-                      <hr />
+                     <hr />   <!--  borrar -->
 
-<p>
+                    <p>
                         <i class="fa fa-map-marker text-muted" aria-hidden="true"></i> &nbsp; Mis
                         Direcciones
-                        <br>   </p>
-<div role="tabpanel" class="tab-pane" id="address">
+                        <br>   
+                    </p>
+                    <div role="tabpanel" class="tab-pane" id="address">
                             <div class="row">
                                 <div class="col-md-6">
                                     <a href="" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Nueva Dirección</a>
                                 </div>
                             </div>
-                                                            <table class="table table-responsive">
+                             <table class="table table-responsive">
                                 <thead>
                                     <tr><th>Alias</th>
                                     <th>Calles</th>
@@ -122,9 +124,10 @@
                                     <th>Cód. Postal</th>
                                     <th>Télefono</th>
                                     <th>Acciones</th>
-                                </tr></thead>
+                                </tr>
+                                </thead>
                                 <tbody>
-                                                                            <tr>
+                                        <tr>
                                             <td>Casa</td>
                                             <td>Tte. Gral. J. D. Perón 1730</td>
                                             <td>Tte. Gral. J. D. Perón 1730</td>
@@ -144,13 +147,9 @@
                                                 </form>
                                             </td>
                                         </tr>
-                                                                    </tbody>
+                                </tbody>
                             </table>
-                                                    </div>
-
-
-
-
+                </div>
                       <article class="card-group">
                         <figure class="card bg stats">
                           <div class="p-3">
@@ -177,7 +176,7 @@
                           </div>
                         </figure>
                       </article>
-                    </div>
+                    </div>  <!-- cierra card account linea88-->
                     <!-- card-body .// -->
                   </article>
                   <!-- card.// -->
@@ -380,6 +379,7 @@
       <!--container.//-->
 
       <br /><br /><br />
+   </div>   
       <!-- <article class="bg-secondary mb-3">
         <div class="card-body text-center">
           <h4 class="text-white">
@@ -710,8 +710,7 @@
 <?php require_once 'footer.php';  ?>
 <!-- FOOTER: TERMINA -->
 
-
-    </div>
+ </div>  <!-- borrar class vacio linea 48 -->
 
 
   </body>

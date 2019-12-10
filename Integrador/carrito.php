@@ -33,7 +33,7 @@
   <body>
       <a href="Contacto.html" id="aa" > Contactanos</a>
     <!-- Header -->
-    <div class="mx-5">
+    
     <?php require_once"NAV.php" ?>
 
       <!--!ACA EMPIEZA CARRITO.//-->
@@ -45,6 +45,7 @@
         <!-- container //  -->
       </section>
       </section>
+	  <div class="mx-5">
       <section class="section-content padding-y">
         <div class="">
           <div class="row">
@@ -217,7 +218,7 @@
 
         <!-- container .//  -->
       </section>
-
+  </div>
 <!--!ACA TERMINA MI CARRITO.//-->
 
    <br /><br /><br />
