@@ -35,7 +35,7 @@
     <!-- Header -->
     
     <?php require_once"NAV.php" ?>
-<div class="mx-5">
+
       <!--!ACA EMPIEZA CARRITO.//-->
       <section class="section-pagetop bg">
         <div class="">
@@ -44,7 +44,7 @@
 
         <!-- container //  -->
       </section>
-      </section>
+      
 	  <div class="mx-5">
       <section class="section-content padding-y">
         <div class="">
@@ -218,12 +218,12 @@
 
         <!-- container .//  -->
       </section>
-  </div>
+  
 <!--!ACA TERMINA MI CARRITO.//-->
 
    <br /><br /><br />
 
-
+</div> <!-- aca cierra mx-5 -->
 
 
 

@@ -29,15 +29,12 @@
 
   <body>
       <a href="Contacto.html" id="aa" > Contactanos</a>
-<<<<<<< HEAD
-       <?php require_once"NAV.php" ?>
+       
       
      
-=======
       <?php require_once"NAV.php" ?>
->>>>>>> 13f508ddb2eb9d65a36e29c16d83f94c06a8e9de
 
-      <div class="mx-5">
+      
 
 
 
@@ -49,7 +46,7 @@
   </section>
         <!-- container //  -->
       
-    <div class="mx-5"> 
+    <div class="mx-5">
       <section class="section-content padding-y">
         <div class="">
           <div class="row">
@@ -384,7 +381,10 @@
       <!--container.//-->
 
       <br /><br /><br />
-   </div>   
+   </div> 
+   </div>  <!--cierra mx-5-->
+
+
       <!-- <article class="bg-secondary mb-3">
         <div class="card-body text-center">
           <h4 class="text-white">
