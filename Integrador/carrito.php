@@ -35,7 +35,7 @@
     <!-- Header -->
     
     <?php require_once"NAV.php" ?>
-
+<div class="mx-5">
       <!--!ACA EMPIEZA CARRITO.//-->
       <section class="section-pagetop bg">
         <div class="">
