@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://kit.fontawesome.com/67f61afa3e.js" crossorigin="anonymous"></script>
-  <title>CASBUSAGI - Zapatillas al paso</title>
-  
-</head>
-<body>
-  <a href="Contacto.php" id="aa" > Contactanos</a>
   <!-- Header -->
+<?php
+/* session_start(); */
+
+?>
   <div class="">
     
     <div class="">
@@ -48,7 +37,7 @@
               Mujer
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="producto-vans.php">VANS</a>
+              <a class="dropdown-item" href="Producto/producto-vans.php">VANS</a>
               <a class="dropdown-item" href="producto.php">NIKE</a>
               <a class="dropdown-item" href="producto-adidas.php">ADIDAS</a>
               <div class="dropdown-divider"></div>
@@ -92,7 +81,9 @@
                     </div>
                     <nav aria-label="breadcrum">
                       <ol class="breadcrum">
-                        
+                        <?php
+require_once("login.php");
+                        ?>
                         <button type="button" style="color: purple; background-color: white; box-shadow: 0px;outline:none; border: none; padding: 0%; margin: 0%; margin-right:5px ;" class="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="background: none; border: none; color: white;">Iniciar Sesion</button>
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                           <div class="modal-dialog" role="document">
@@ -123,7 +114,7 @@
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <button type="submit" class="btn btn-primary">Ingresar</button>
                               </div>
                             </div>
                           </div>
@@ -135,11 +126,12 @@
                 
                 
               </div>
-              <?php if(isset($_SESSION['mail'])): ?>
+              <div class="navbar-nav ml-auto">
+                <?php if(!isset($_SESSION['email'])): ?>
+                              <?php endif; ?>
+                <?php if(isset($_SESSION['email'])): ?>
+                <a class="btn btn-danger" href="logout.php" role="button">Log out</a>
                 <?php endif; ?>
-              <!-- FINALIZA LA CONDICION -->
+            </div>
+        </div>
             </nav>
-            
-            
-          </body>
-          </html>

@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/67f61afa3e.js" crossorigin="anonymous"></script>
-    <title>CASBUSAGI - Zapatillas al paso</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
 
 
+    <!--container.//-->
 
+
+    <article class="bg-secondary mb-3  container-fluid">
+      <div class="card-body text-center">
+        <h4 class="text-white"><a href="#"><img src="img/Icono.ico" alt="" height="100px" width="300px"></a> <br>SIEMPRE UN PASO ADELANTE </h4>
+        <p class="h5 text-white"> Importadores en calidad, expertos en atención.</p> <br>
+
+      </div>
+
+    </article>
 
 
 
