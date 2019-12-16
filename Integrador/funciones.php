@@ -126,12 +126,15 @@ function abrirJson($unArvhivo){
  }
 
 
-function persistirDato ($a, $b) {
-    if (isset($a[$b])) {
-        return $a[$b];
-    } else return "";
+ function persistirDato($arrayE, $campo) {
+    if( isset($arrayE[$campo]) ) {
+        return "";
+    } else {
+        if(isset($_POST[$campo])) {
+            return $_POST[$campo];
+        }
+    }
 }
-
 
 
 

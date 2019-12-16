@@ -2,10 +2,10 @@
 
 require_once "funciones.php";
  
-$arraydeerrores = "";
+$arrayDeErrores = "";
 if($_POST) {
   $arrayDeErrores = validarRegistracion($_POST);
-  if(count($arrayDeErrores) === 0) {
+  if(count($arrayDeErrores) == 0) {
      $usuariofinal=[
       "nombre"=>trim($_POST["nombre"]),
       "apellido"=>trim($_POST["apellido"]),
@@ -67,29 +67,29 @@ if($_POST) {
       <div class="col-md-2 mb-3">
         <label for="validationDefault01">Nombre</label>
         <input type="text" name="nombre" class="form-control" id="validationDefault01" placeholder="Nombre"
-        value="<?= persistirDato($arraydeerrores, 'nombre'); ?>">
-        <small><?= isset($arraydeerrores["nombre"])? $arraydeerrores["nombre"]:"" ?></small>
+        value="<?= persistirDato($arrayDeErrores,"nombre"); ?>">
+        <small><?= isset($arrayDeErrores["nombre"])? $arrayDeErrores["nombre"]:"" ?></small>
       </div>
       <div class="col-md-2 mb-3">
         <label for="validationDefault02">Apellido</label>
-        <input type="text" name="apellido" class="form-control" id="validationDefault02" placeholder="Apellido" value="<?= persistirDato($arraydeerrores, 'apellido'); ?>">
-        <small><?= isset($arraydeerrores["apellido"])? $arraydeerrores["apellido"]:"" ?></small>
+        <input type="text" name="apellido" class="form-control" id="validationDefault02" placeholder="Apellido" value="<?= persistirDato($arrayDeErrores, 'apellido'); ?>">
+        <small><?= isset($arrayDeErrores["apellido"])? $arrayDeErrores["apellido"]:"" ?></small>
       </div>
       <div class="col-md-3 mb-3">
         <label for="validationDefault01">Email</label>
-        <input type="email" name="email" class="form-control" id="validationDefault01" placeholder="Email" value="<?= persistirDato($arraydeerrores, 'email'); ?>" >
-        <small><?= isset($arraydeerrores["email"])? $arraydeerrores["email"]:"" ?></small>
+        <input type="email" name="email" class="form-control" id="validationDefault01" placeholder="Email" value="<?= persistirDato($arrayDeErrores, 'email'); ?>" >
+        <small><?= isset($arrayDeErrores["email"])? $arrayDeErrores["email"]:"" ?></small>
       </div>
 
       <div class="col-md-2 mb-3">
         <label for="validationDefault01">Contraseña</label>
-        <input type="password" name="password" class="form-control" id="validationDefault01" placeholder="Contraseña" value="<?= persistirDato($arraydeerrores, 'password'); ?>" >
-        <small><?= isset($arraydeerrores["password"])? $arraydeerrores["password"]:"" ?></small>
+        <input type="password" name="password" class="form-control" id="validationDefault01" placeholder="Contraseña" value="<?= persistirDato($arrayDeErrores, 'password'); ?>" >
+        <small><?= isset($arrayDeErrores["password"])? $arrayDeErrores["password"]:"" ?></small>
       </div>
       <div class="col-md-2 mb-3">
         <label for="validationDefaultUsername">Repetir Contraseña</label>
-        <input type="password" name="repassword" class="form-control" id="validationDefaultUsername" placeholder="Contraseña" aria-describedby="inputGroupPrepend2"  value="<?= persistirDato($arraydeerrores, 'repassword'); ?>">
-          <small><?= isset($arraydeerrores["repassword"])? $arraydeerrores["repassword"]:"" ?></small>
+        <input type="password" name="repassword" class="form-control" id="validationDefaultUsername" placeholder="Contraseña" aria-describedby="inputGroupPrepend2"  value="<?= persistirDato($arrayDeErrores, 'repassword'); ?>">
+          <small><?= isset($arrayDeErrores["repassword"])? $arrayDeErrores["repassword"]:"" ?></small>
 
       </div>
     </div>
@@ -343,23 +343,23 @@ if($_POST) {
 
         <div class="col-md-2 mb-3">
           <label for="validationDefault03">Ciudad</label>
-          <input type="text" class="form-control" id="validationDefault03" placeholder="Ciudad" name="ciudad" value="<?= persistirDato($arraydeerrores, 'ciudad'); ?>">
-          <small><?= isset($arraydeerrores["ciudad"])? $arraydeerrores["ciudad"]:"" ?></small>
+          <input type="text" class="form-control" id="validationDefault03" placeholder="Ciudad" name="ciudad" value="<?= persistirDato($arrayDeErrores, 'ciudad'); ?>">
+          <small><?= isset($arrayDeErrores["ciudad"])? $arrayDeErrores["ciudad"]:"" ?></small>
         </div>
       <div class="col-md-3 mb-3">
         <label for="validationDefault04">Barrio</label>
-        <input type="text" class="form-control" id="validationDefault04" placeholder="Barrio" name="barrio" value="<?= persistirDato($arraydeerrores, 'barrio'); ?>" >
-        <small><?= isset($arraydeerrores["barrio"])? $arraydeerrores["barrio"]:"" ?></small>
+        <input type="text" class="form-control" id="validationDefault04" placeholder="Barrio" name="barrio" value="<?= persistirDato($arrayDeErrores, 'barrio'); ?>" >
+        <small><?= isset($arrayDeErrores["barrio"])? $arrayDeErrores["barrio"]:"" ?></small>
       </div>
       <div class="col-md-2 mb-3">
         <label for="validationDefault05">Codigo Postal</label>
-        <input type="number" min="1000"  max="9999" class="form-control" id="validationDefault05" placeholder="Codigo Postal" name="postal" value="<?= persistirDato($arraydeerrores, 'postal'); ?>" >
-        <small><?= isset($arraydeerrores["postal"])? $arraydeerrores["postal"]:"" ?></small>
+        <input type="number" min="1000"  max="9999" class="form-control" id="validationDefault05" placeholder="Codigo Postal" name="postal" value="<?= persistirDato($arrayDeErrores, 'postal'); ?>" >
+        <small><?= isset($arrayDeErrores["postal"])? $arrayDeErrores["postal"]:"" ?></small>
       </div>
       <div class="col-md-2 mb-3">
           <label for="validationDefault05" >Año de Nacimiento</label>
-          <input type="number" min="1950"  max="2019" class="form-control" id="validationDefault05" placeholder="2000" name="nacimiento" value="<?= persistirDato($arraydeerrores, 'nacimiento'); ?>">
-          <small><?= isset($arraydeerrores["nacimiento"])? $arraydeerrores["nacimiento"]:"" ?></small>
+          <input type="number" min="1950"  max="2019" class="form-control" id="validationDefault05" placeholder="2000" name="nacimiento" value="<?= persistirDato($arrayDeErrores, 'nacimiento'); ?>">
+          <small><?= isset($arrayDeErrores["nacimiento"])? $arrayDeErrores["nacimiento"]:"" ?></small>
         </div>
         <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="customSwitch1" require>

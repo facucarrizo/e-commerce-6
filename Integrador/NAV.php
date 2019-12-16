@@ -2,9 +2,17 @@
 <?php
 require_once('funciones.php');
 ?>
-    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+    </head>
+    <body>
     <div >
-      
+    <a href="Contacto.php" id="aa" > Contactanos</a>
       <nav class=" navbar navbar-expand-lg navbar-light"
       id="inicio">
       
@@ -71,7 +79,7 @@ require_once('funciones.php');
                   <a href="usuario.php" class="mr-3 icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a>
                 </div> 
                 <div class="widget-header icontext">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light ">
                 <?php if(!isset($_SESSION['email'])): ?>
                   <p> </p>
                 <?php endif; ?>
@@ -85,11 +93,11 @@ require_once('funciones.php');
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <?php if(!isset($_SESSION['email'])): ?>
-                <a class="btn btn-primary mr-2" href="Formulario Registro.php" role="button">Registro</a>
-                <a class="btn btn-secondary mr-2" href="login.php" role="button">Login</a>
+                <a class="btn  mr-2" id="sesion" href="login.php" role="button">Inicio de Sesion</a>
+                <a class="btn  mr-2" id="sesion" href="Formulario Registro.php" role="button">|     Registro</a>
                 <?php endif; ?>
                 <?php if(isset($_SESSION['email'])): ?>
-                <a class="btn btn-danger" href="logout.php" role="button">Log out</a>
+                <a class="btn" id="sesion2" href="logout.php" role="button">Log out</a>
                 <?php endif; ?>
             </div>
         </div>
@@ -102,4 +110,7 @@ require_once('funciones.php');
               </div>
              
         </div>
+    </body>
+    </html>
+   
 

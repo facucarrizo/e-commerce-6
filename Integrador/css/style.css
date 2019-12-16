@@ -47,9 +47,25 @@ color: #0e76a8;
 	z-index: 100;
 }
 
-
+#sesion{
+	font-size: 17px;
+	padding: 0%;
+	padding-bottom: 1%;
+}
+#sesion2{
+	font-size: 17px;
+	padding: 0%;
+	padding-bottom: 1%;
+	color: #000000;
+}
+#sesion2:hover{
+	
+	color: red;
+}
 /* Barra navegaciòn */
-
+.widget-header icontext{
+	background-color: white;
+}
 nav.navbar {
 	background-color: #ffffff;
 	height: 20vh;
