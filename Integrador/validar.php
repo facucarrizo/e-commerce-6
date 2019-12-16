@@ -7,7 +7,7 @@
                $errores["nombre"]= "* Este campo no debe estar vacio";
           }
           elseif (strlen($_POST["nombre"]) <= 2 ) {
-            $errores["nombre"]="Debe tener mas de dos caracteres";
+            $errores["nombre"]="* Debe tener mas de dos caracteres";
           }
           else {
             // todo bien
@@ -18,7 +18,7 @@
                  $errores["apellido"]= "* Este campo no debe estar vacio";
             }
             elseif (strlen($_POST["apellido"]) <= 2 ) {
-              $errores["apellido"]="Debe tener mas de dos caracteres";
+              $errores["apellido"]="* Debe tener mas de dos caracteres";
             }
             else {
               // todo bien
@@ -39,7 +39,7 @@
           $errores["contraseña"]= "* Este campo no debe estar vacio";
      }
      elseif (strlen($_POST["contraseña"]) <6 ) {
-      $errores["contraseña"]="Debe tener mas de seis caracteres";
+      $errores["contraseña"]="* Debe tener mas de seis caracteres";
     }
     else{
       // todo bien
@@ -50,7 +50,7 @@
           $errores["recontraseña"]= "* Este campo no debe estar vacio";
      }
      if ($_POST["contraseña"]!=$_POST["recontraseña"]) {
-       $errores["recontraseña"]="las contraseñas deben coicindir";
+       $errores["recontraseña"]="* Las contraseñas deben coicindir";
      }
      else {
       //  todo bien
@@ -61,7 +61,7 @@
            $errores["ciudad"]= "* Este campo no debe estar vacio";
       }
       elseif (strlen($_POST["ciudad"]) <= 4 ) {
-        $errores["ciudad"]="Debe tener mas de cuatro caracteres";
+        $errores["ciudad"]="* Debe tener mas de cuatro caracteres";
       }
       else {
         // todo bien
@@ -72,7 +72,7 @@
              $errores["barrio"]= "* Este campo no debe estar vacio";
         }
         elseif (strlen($_POST["barrio"]) <= 4 ) {
-          $errores["barrio"]="Debe tener mas de cuatro caracteres";
+          $errores["barrio"]="* Debe tener mas de cuatro caracteres";
         }
         else {
           // todo bien
