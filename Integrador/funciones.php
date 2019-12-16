@@ -1,5 +1,7 @@
 <?php 
 
+
+
 /* Para hacer un var_dump copado */
 function pre($vardamp){
     echo "<pre>";
@@ -115,6 +117,12 @@ function abrirJson($unArvhivo){
     $explodeDeUsuarios = explode (PHP_EOL, $usuariosGuardados);
     array_pop($explodeDeUsuarios);
     return $explodeDeUsuarios; 
+ }
+ function datosUsuario($dato) {
+    $arrayUsuarios = abrirJson('usuario.json');
+    foreach($arrayUsuarios as $usuarioJson) 
+        $userFinal = json_decode($usuarioJson, true);
+        return $userFinal[$dato];
  }
 
 

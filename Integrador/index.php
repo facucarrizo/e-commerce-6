@@ -1,10 +1,17 @@
 <?php
 session_start();
+require_once('funciones.php');
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<?php require_once("head.php"); ?>
+<!DOCTYPE html>
+<html lang="es">
+<header>
+  <?php
+require_once('head.php');
+?>
+<title>CASBUSAGI - Zapatillas al paso</title>
+</header>
+
 <body>
   <a href="Contacto.html" id="aa" > Contactanos</a>
   <!-- Header -->

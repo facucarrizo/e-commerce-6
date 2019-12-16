@@ -5,8 +5,7 @@ require_once "funciones.php";
 $arraydeerrores = "";
 if($_POST) {
   $arrayDeErrores = validarRegistracion($_POST);
-  if(count($arrayDeErrores) === 0)
-  pre($arrayDeErrores); {
+  if(count($arrayDeErrores) === 0) {
      $usuariofinal=[
       "nombre"=>trim($_POST["nombre"]),
       "apellido"=>trim($_POST["apellido"]),
@@ -34,6 +33,7 @@ if($_POST) {
     } */
    }
   }
+
 ?>
 
 <!DOCTYPE html>
