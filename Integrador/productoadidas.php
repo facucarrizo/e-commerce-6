@@ -1,16 +1,14 @@
-<?php
-session_start();
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php
-require_once('head.php');
-?>
- <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/pag-productos.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/67f61afa3e.js" crossorigin="anonymous"></script>
   <title>Document</title>
 
 </head>
@@ -28,7 +26,7 @@ require_once('head.php');
 <div class="portada">
     <div class="jumbotron jumbotron-fluid" style="background-color: white; max-heigth: 30%; ">
         <div class="jumbo">
-          <img src="img/vans-logo.jpg" alt="" style="max-width: 50%; max-height: 50%;">
+          <img src="img/adidas-logo.jpg" alt="" style="max-width: 50%; max-height: 50%;">
         </div>
       </div>
     </div>
@@ -39,7 +37,7 @@ require_once('head.php');
 
 
      <div id="hola" class="card" style="width: 18rem;">
-       <a href="perfilproducto.php"> <img id="hola2" src="img/vans-1.jpg" class="card-img-top" alt="..."></a>
+       <a href="perfilproducto.php"> <img id="hola2" src="img/adidas-1.jpg" class="card-img-top" alt="..."></a>
 
 
 
@@ -47,7 +45,7 @@ require_once('head.php');
 
 
           <div id="nomb">
-              <h2>Vans Old Skool</h2>
+              <h2>Nike Air Max 97</h2>
           </div>
 
           <div id="dos">
@@ -69,11 +67,11 @@ require_once('head.php');
 
 
       <div id="hola" class="card" style="width: 18rem;">
-            <a href="perfilproducto.php"><img id="hola2" src="img/vans-2.jpg" class="card-img-top" alt="..."></a>
+            <a href="perfilproducto.php">  <img id="hola2" src="img/adidas-2" class="card-img-top" alt="..."></a>
           <div class="card-body">
 
             <div id="nomb">
-                <h2>Check Old Skool</h2>
+                <h2>Nike Air Max Oketo</h2>
             </div>
 
             <div id="dos">
@@ -96,11 +94,11 @@ require_once('head.php');
         </div>
 
         <div id="hola" class="card" style="width: 18rem;">
-                <a href="perfilproducto.php"> <img id="hola2" src="img/vans-3.jpg" class="card-img-top" alt="..."></a>
+                <a href="perfilproducto.php"> <img id="hola2" src="img/adidas-3.jpg" class="card-img-top" alt="..."></a>
             <div class="card-body">
 
               <div id="nomb">
-                  <h2>Disney x Vans</h2>
+                  <h2>Nike Sportswear</h2>
               </div>
 
               <div id="dos">
@@ -132,5 +130,8 @@ require_once('head.php');
 </div>
 
 
+
+ 
+
 </body>
-</html>
+</htmls>

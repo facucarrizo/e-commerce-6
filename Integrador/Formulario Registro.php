@@ -1,40 +1,39 @@
 <?php
 
-require_once "validar.php";
-$nombre="";
-$mail="";
-$arraydeerrores = [];
-if ($_POST) {
-  $arraydeerrores = validarregistracion($_POST);
-   if (count($arraydeerrores) == 0) {
+require_once "funciones.php";
+ 
+$arraydeerrores = "";
+if($_POST) {
+  $arrayDeErrores = validarRegistracion($_POST);
+  if(count($arrayDeErrores) === 0) {
      $usuariofinal=[
       "nombre"=>trim($_POST["nombre"]),
       "apellido"=>trim($_POST["apellido"]),
-      "mail"=>$_POST["mail"],
-      "contraseña"=>password_hash($_POST["contraseña"], PASSWORD_DEFAULT),
+      "email"=>$_POST["email"],
+      "password"=>password_hash($_POST["password"], PASSWORD_DEFAULT),
       "ciudad"=>$_POST["ciudad"],
       "barrio"=>$_POST["barrio"],
       "postal"=>$_POST["postal"],
       "nacimiento"=>$_POST["nacimiento"]
      ];
-    //  pre($usuariofinal);
-    //  exit;
+
     $jusuario=json_encode($usuariofinal);
     file_put_contents("usuario.json",$jusuario . PHP_EOL, FILE_APPEND);
-    $usuariosguardados=file_get_contents("usuario.json");
+    header("Location: index.php");
+ /*    $usuariosguardados=file_get_contents("usuario.json");
     $explode=explode(PHP_EOL,$usuariosguardados);
     array_pop($explode);
     foreach($explode as $usuario){
       $user= json_decode($usuario, true);
-      if ($user["mail"]== $_POST["mail"]) {
-        if (password_verify($_POST["contraseña"],$user["contraseña"])) {
+      if ($user["email"]== $_POST["email"]) {
+        if (password_verify($_POST["password"],$user["password"])) {
           // header("location:pag registro.php");
         }
       }
-    }
-    // pre($explode);
+    } */
    }
   }
+
 ?>
 
 <!DOCTYPE html>
@@ -60,9 +59,7 @@ if ($_POST) {
     <a href="Contacto.php" id="aa" > Contactanos</a>
   <!-- Header -->
  
-
  
-
   <div id="Todo">
 
   <form method="post"  action=""> <div id="titulo">Crear Cuenta</div>
@@ -80,19 +77,19 @@ if ($_POST) {
       </div>
       <div class="col-md-3 mb-3">
         <label for="validationDefault01">Email</label>
-        <input type="email" name="mail" class="form-control" id="validationDefault01" placeholder="Email" value="<?= persistirDato($arraydeerrores, 'mail'); ?>" >
-        <small><?= isset($arraydeerrores["mail"])? $arraydeerrores["mail"]:"" ?></small>
+        <input type="email" name="email" class="form-control" id="validationDefault01" placeholder="Email" value="<?= persistirDato($arraydeerrores, 'email'); ?>" >
+        <small><?= isset($arraydeerrores["email"])? $arraydeerrores["email"]:"" ?></small>
       </div>
 
       <div class="col-md-2 mb-3">
         <label for="validationDefault01">Contraseña</label>
-        <input type="password" name="contraseña" class="form-control" id="validationDefault01" placeholder="Contraseña" value="<?= persistirDato($arraydeerrores, 'contraseña'); ?>" >
-        <small><?= isset($arraydeerrores["contraseña"])? $arraydeerrores["contraseña"]:"" ?></small>
+        <input type="password" name="password" class="form-control" id="validationDefault01" placeholder="Contraseña" value="<?= persistirDato($arraydeerrores, 'password'); ?>" >
+        <small><?= isset($arraydeerrores["password"])? $arraydeerrores["password"]:"" ?></small>
       </div>
       <div class="col-md-2 mb-3">
         <label for="validationDefaultUsername">Repetir Contraseña</label>
-        <input type="password" name="recontraseña" class="form-control" id="validationDefaultUsername" placeholder="Contraseña" aria-describedby="inputGroupPrepend2"  value="<?= persistirDato($arraydeerrores, 'recontraseña'); ?>">
-          <small><?= isset($arraydeerrores["recontraseña"])? $arraydeerrores["recontraseña"]:"" ?></small>
+        <input type="password" name="repassword" class="form-control" id="validationDefaultUsername" placeholder="Contraseña" aria-describedby="inputGroupPrepend2"  value="<?= persistirDato($arraydeerrores, 'repassword'); ?>">
+          <small><?= isset($arraydeerrores["repassword"])? $arraydeerrores["repassword"]:"" ?></small>
 
       </div>
     </div>
