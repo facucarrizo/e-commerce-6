@@ -17,9 +17,11 @@ if($_POST) {
       "nacimiento"=>$_POST["nacimiento"]
      ];
 
-    $jusuario=json_encode($usuariofinal);
-    file_put_contents("usuario.json",$jusuario . PHP_EOL, FILE_APPEND);
-    header("Location: index.php");
+     $jusuario=json_encode($usuariofinal);
+     file_put_contents("usuario.json",$jusuario . PHP_EOL, FILE_APPEND);
+     }
+     }
+    // header("Location: index.php");
  /*    $usuariosguardados=file_get_contents("usuario.json");
     $explode=explode(PHP_EOL,$usuariosguardados);
     array_pop($explode);
@@ -31,8 +33,8 @@ if($_POST) {
         }
       }
     } */
-   }
-  }
+  //  }
+  // }
 
 ?>
 

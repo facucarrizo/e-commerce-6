@@ -103,7 +103,7 @@ function validarRegistracion($arrayGP){
            }
             
   if (count($errores) === 0) {
-      return true;
+    header("location:pag registro.php");
   }
    else {
        return $errores;
