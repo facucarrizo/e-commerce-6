@@ -51,12 +51,20 @@ color: #0e76a8;
 	font-size: 17px;
 	padding: 0%;
 	padding-bottom: 1%;
+	
+	text-decoration: none;
+}
 }
 #sesion2{
 	font-size: 17px;
-	padding: 0%;
+	padding: 1%;
 	padding-bottom: 1%;
 	color: #000000;
+	padding-left: 2%;
+}
+#sesion:hover{
+	
+	color: black;
 }
 #sesion2:hover{
 	

@@ -84,7 +84,7 @@ require_once('funciones.php');
                   <p> </p>
                 <?php endif; ?>
                 <?php if(isset($_SESSION['email'])): ?>
-                  <a class="navbar-brand" href="#">Bienvenido <?= datosUsuario("nombre");?></a>
+                  <a class="navbar-brand" style="padding-right:4%; margin:0%" href="#">Bienvenido <?= datosUsuario("nombre");?></a>| 
                 <?php endif; ?>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,11 +93,11 @@ require_once('funciones.php');
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <?php if(!isset($_SESSION['email'])): ?>
-                <a class="btn  mr-2" id="sesion" href="login.php" role="button">Inicio de Sesion</a>
-                <a class="btn  mr-2" id="sesion" href="Formulario Registro.php" role="button">|     Registro</a>
+                <a class=" mr-2" id="sesion" href="login.php" role="button">Inicio de Sesion</a>
+                | <a  class="  mr-2" style="padding-left: 2%;" id="sesion" href="Formulario Registro.php" role="button">Registro</a>
                 <?php endif; ?>
                 <?php if(isset($_SESSION['email'])): ?>
-                <a class="btn" id="sesion2" href="logout.php" role="button">Log out</a>
+                  <a class=" mr-2" style="padding-left:4%; padding-top:1%; text-decoration: none;" id="sesion2" href="logout.php" role="button">Cerrar Sesion</a>
                 <?php endif; ?>
             </div>
         </div>

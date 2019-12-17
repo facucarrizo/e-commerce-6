@@ -6,7 +6,8 @@ $arrayDeErrores = [];
 
 if($_POST) {
     $arrayDeErrores = validarRegistracion($_POST);
-    if(count($arrayDeErrores) == 0) {
+    
+    if(!$arrayDeErrores) {
         // LOGUEO AL USUARIO
         $arrayUsuarios = abrirJson('usuario.json');
         foreach($arrayUsuarios as $usuarioJson) {
@@ -56,7 +57,7 @@ if($_POST) {
     <main>
         <div id="Todo2">
         <div id="Todo">
-    <h1>Login</h1>
+    <h1>Iniciar Sesion</h1>
     <form method="post" action="">
         <div class="form-group">
             <label for="email">Email</label>
