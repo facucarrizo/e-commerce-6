@@ -8,6 +8,16 @@ require_once('funciones.php');
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="css/style.css">
+    <script
+      src="https://kit.fontawesome.com/67f61afa3e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/myaccount.css" />
       <title>Document</title>
     </head>
     <body>
@@ -73,9 +83,23 @@ require_once('funciones.php');
                   <a href="carrito.php" class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></a>
                   <span class=" badge-pill badge-danger notify">0</span> 
                 </div>
+
+
                 <!--  ARRANCA LA CONDICION SI ES QUE HAY UNA SESION INICIADA -->
-               
-               
+
+                <?php if(!isset($_SESSION['email'])): ?>
+                <div class="widget-header  mr-3">
+                  <!-- <a href="usuario.php" class="mr-3 icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a> -->
+                </div> 
+                <?php endif; ?>
+                <?php if(isset($_SESSION['email'])): ?>
+                  <div class="widget-header  mr-3">
+                  <a href="usuario.php" class="mr-3 icon icon-sm rounded-circle border"><img
+                            class="rounded-circle img-sm bordero"
+                            src="img/avatar3.jpg"
+                          /></i></a>
+                </div> <?php endif; ?>
+                
                 <div class="widget-header icontext">
                 <nav class="navbar navbar-expand-lg navbar-light ">
                 <?php if(!isset($_SESSION['email'])): ?>
