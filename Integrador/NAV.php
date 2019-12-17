@@ -88,7 +88,7 @@ require_once('funciones.php');
                 <!--  ARRANCA LA CONDICION SI ES QUE HAY UNA SESION INICIADA -->
                 <?php if(!isset($_SESSION['email'])): ?>
                 <div class="widget-header  mr-3">
-                  <a href="usuario.php" class="mr-3 icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a>
+                  <!-- <a href="usuario.php" class="mr-3 icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a> -->
                 </div> 
                 <?php endif; ?>
                 <?php if(isset($_SESSION['email'])): ?>
@@ -107,7 +107,23 @@ require_once('funciones.php');
                   <p> </p>
                 <?php endif; ?>
                 <?php if(isset($_SESSION['email'])): ?>
-                  <a class="navbar-brand" style="padding-right:4%; margin:0%" href="#">Bienvenido <?= datosUsuario("nombre");?></a>| 
+                  <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="a" data-toggle="dropdown" aria-haspopup="true"  style="text-transform: capitalize;font-size: 20px;" aria-expanded="false">
+  Bienvenido <?= datosUsuario("nombre");?>
+                </a>
+  <div class="dropdown-menu" style="text-shadow: none;"  aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" style="color:black;" href="usuario.php">Mi usuario</a>
+    <?php if(isset($_SESSION['email'])): ?>
+                  <a class=" dropdown-item" id="sesion2" style="color:black;" href="logout.php" >Cerrar Sesion</a>
+                <?php endif; ?>
+  </div>
+</div>
+                  <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bienvenido <?= datosUsuario("nombre");?></a>| 
+                   <div class="dropdown-menu">
+                  <a class="dropdown-item" href="usuario.php">VANS</a>
+                  <a class="dropdown-item" href="producto.php">NIKE</a>
+                  
+                  </div> -->
                 <?php endif; ?>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,11 +133,11 @@ require_once('funciones.php');
             <div class="navbar-nav ml-auto">
                 <?php if(!isset($_SESSION['email'])): ?>
                 <a class=" mr-2" id="sesion" href="login.php" role="button">Inicio de Sesion</a>
-                | <a  class="  mr-2" style="padding-left: 2%;" id="sesion" href="Formulario Registro.php" role="button">Registro</a>
+                | <a  class="  mr-2" style="padding-left: 2%;" id="sesion" href="Formulario Registro.php" role="button">Registrarme</a>
                 <?php endif; ?>
-                <?php if(isset($_SESSION['email'])): ?>
-                  <a class=" mr-2" style="padding-left:4%; padding-top:1%; text-decoration: none;" id="sesion2" href="logout.php" role="button">Cerrar Sesion</a>
-                <?php endif; ?>
+                 <!-- if(isset($_SESSION['email'])): 
+                  <a class=" mr-2" style="padding-left:1em; padding-top:1%; text-decoration: none;" id="sesion2" href="logout.php" role="button">Cerrar Sesion</a>
+                 endif;  -->
             </div>
         </div>
     </nav>

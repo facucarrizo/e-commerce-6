@@ -77,6 +77,9 @@ if($_POST) {
         </div>
         <button type="submit" class="btn btn-danger">Ingresar</button>
     </form>
+    <small>
+        <a href="Formulario Registro.php" id="nuevo" >Nuevo aqui? Registrate!</a>
+    </small>
     </main>
     </div></div>
     
