@@ -75,9 +75,7 @@ require_once('funciones.php');
                 </div>
                 <!--  ARRANCA LA CONDICION SI ES QUE HAY UNA SESION INICIADA -->
                
-                <div class="widget-header  mr-3">
-                  <!-- <a href="usuario.php" class="mr-3 icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a> -->
-                </div> 
+               
                 <div class="widget-header icontext">
                 <nav class="navbar navbar-expand-lg navbar-light ">
                 <?php if(!isset($_SESSION['email'])): ?>
@@ -102,7 +100,9 @@ require_once('funciones.php');
                   
                   </div> -->
                 <?php endif; ?>
-        
+                <!-- <div class="widget-header  mr-3">
+                  <a href="usuario.php" class="mr-3 icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a>
+                </div>  -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
