@@ -62,12 +62,12 @@ if($_POST) {
         <div class="form-group">
             <label for="email">Email</label>
             <input type="email" class="form-control" id="email" name="email" value="">
-            <small class="text-danger"><?= isset($arrayDeErrores['email']) ? $arrayDeErrores['email'] : "" ?></small>
+            <small></small>
         </div>
         <div class="form-group">
             <label for="password">Contraseña</label>
             <input type="password" class="form-control" id="password" name="password">
-            <small class="text-danger"><?= isset($arrayDeErrores['password']) ? $arrayDeErrores['password'] : "" ?></small>
+            <small><?= isset($arrayDeErrores["password"])? $arrayDeErrores["password"]:"" ?></small>
         </div>
         <div class="form-group">
             <div class="form-check">

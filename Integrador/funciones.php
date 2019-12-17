@@ -1,7 +1,5 @@
 <?php 
 
-
-
 /* Para hacer un var_dump copado */
 function pre($vardamp){
     echo "<pre>";
