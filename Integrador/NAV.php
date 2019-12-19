@@ -44,7 +44,7 @@ require_once('funciones.php');
             <a class="dropdown-item" href="producto.php">NIKE</a>
             <a class="dropdown-item" href="producto-adidas.php">ADIDAS</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">TODAS</a>
+            <a class="dropdown-item" href="todos-productos.php">TODAS</a>
           </div>
         </li>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -57,7 +57,7 @@ require_once('funciones.php');
               <a class="dropdown-item" href="producto.php">NIKE</a>
               <a class="dropdown-item" href="producto-adidas.php">ADIDAS</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">TODAS</a>
+              <a class="dropdown-item" href="todos-productos.php">TODAS</a>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <li class="nav-item dropdown">
@@ -69,7 +69,7 @@ require_once('funciones.php');
                   <a class="dropdown-item" href="producto.php">NIKE</a>
                   <a class="dropdown-item" href="producto-adidas.php">ADIDAS</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">TODAS</a>
+                  <a class="dropdown-item" href="todos-productos.php">TODAS</a>
                 </div>
               </li>
           
