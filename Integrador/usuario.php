@@ -1,5 +1,10 @@
+<!-- Falta capturar el dato de paìs por $_POST y retornarlo en su campo -->
+<!-- poder editar informaciòn "alias,  calles etc." ò agregarlas al formulario y tomarlas de ahi -->
+<!--  -->
+
 <?php
 session_start();
+require_once('funciones.php');
 
 ?>
 <!DOCTYPE html>
@@ -101,8 +106,8 @@ session_start();
                           />
                         </div>
                         <div class="text">
-                          <strong> Sr. Joaquin laravel </strong> <br />
-                          myloginname@gmail.com <br />
+                          <strong> <?= datosUsuario('nombre');?> </strong> <br />
+                          <?= datosUsuario('email');?><br />
                           <a href="#" class="btn-link"> Editar</a>
                         </div>
                       </figure>
@@ -134,14 +139,14 @@ session_start();
                                 </thead>
                                 <tbody>
                                         <tr>
-                                            <td>Casa</td>
-                                            <td>Tte. Gral. J. D. Perón 1730</td>
+                                            <td><?= datosUsuario('alias'); ?></td>
+                                            <td><?= datosUsuario('calle')?></td>
                                             <td>Tte. Gral. J. D. Perón 1730</td>
                                             <td></td>
                                                                                         <!-- <td></td> -->
                                             <td>ARGENTINA</td>
-                                            <td>1037</td>
-                                            <td>02914705388</td>
+                                            <td><?= datosUsuario('postal');?></td>
+                                            <td><?= datosUsuario('telefono'); ?></td>
                                             <td>
                                                 <form method="post" action="https://shop.laracom.net/customer/1231/address/755" class="form-horizontal">
                                                     <div class="btn-group">
