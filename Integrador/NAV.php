@@ -87,7 +87,7 @@ require_once('funciones.php');
 
                 <!--  ARRANCA LA CONDICION SI ES QUE HAY UNA SESION INICIADA -->
 
-                <?php if(!isset($_SESSION['email'])): ?>
+                <?php if(!isset($_FILES['avatar'])): ?>
                 <div class="widget-header  mr-3">
                   <!-- <a href="usuario.php" class="mr-3 icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a> -->
                 </div> 
