@@ -10,6 +10,9 @@ function pre($vardamp)
 
 
 
+
+
+
 function abrirJson($unArvhivo)
 {
     $usuariosGuardados = file_get_contents($unArvhivo);
@@ -19,6 +22,12 @@ function abrirJson($unArvhivo)
 }
 
 
+
+
+
+
+
+
 function datosUsuario($dato)
 {
     $arrayUsuarios = abrirJson('usuario.json');
@@ -26,6 +35,10 @@ function datosUsuario($dato)
         $userFinal = json_decode($usuarioJson, true);
     return $userFinal[$dato];
 }
+
+
+
+
 
 
 function persistirDato($arrayE, $campo)
@@ -40,15 +53,87 @@ function persistirDato($arrayE, $campo)
 }
 
 
-/* function ValidarArchivo() {
-    if ($_FILES) {
-        if($_FILES['errores'] != 0) {
-            echo "Hay un error al cargar el archivo, por favor vuelva a intentarlo"; 
+
+
+
+
+
+
+/* Validaciòn Loguin */
+function validarLogin (){
+    $error=[];
+    if($_POST){
+        if (isset($_POST['email'])) {
+            if ($_POST['email'] != datosUsuario('email')) {
+                $error['email']= "email no registrado";
+
+            } elseif (password_verify($_POST['password'], datosUsuario('password')) ==false) {
+                $error['password'] = "El password ingresado es incorrecto";
+            }
+       }
+
+       if (count($error) === 0) {
+        $_SESSION['email'] = datosUsuario('email');
+        if(isset($_POST['recordarme']) && $_POST['recordarme'] == "on") {
+            // Unix time
+            setcookie('userEmail', datosUsuario('email'), time() + 60 * 60 * 24 * 7);
+            setcookie('userPass', datosUsuario('password'), time() + 60 * 60 * 24 * 7);
         }
-     if ()
+    } else {
+        return $error;
+    }
+
     }
 }
- */
+
+
+
+
+
+
+/* Validar FILE */
+$errores= "";
+if($_POST){
+    if (isset($_FILES['avatar'])) { 
+      $name = $_FILES['avatar']['name'];
+      $tmp_name = $_FILES ['avatar']['tmp_name'];
+      $error  = $_FILES['avatar']['error'];
+      $size = $_FILES['avatar']['size'];
+      $type = $_FILES['avatar']['type'];
+      $max_size = 1024*1024*1;
+      if ($error !=0 ) {
+          $errores="error, intente de nuevo";
+      }
+      elseif ($size > $max_size) {
+          $errores= "supera el limite sugerido 1MB";
+      }
+      elseif ( $type != 'image/jpeg' && $type != 'image/png' && $type != 'image/jpg') {
+          $errores= "solo admite jpg, jpeg y png";
+      }
+    else {
+      $ruta = "archivos/" .$name;
+      move_uploaded_file($tmp_name, $ruta);
+      
+       }
+    
+    }
+    else {
+      return $errores;
+    }
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -64,13 +149,6 @@ function validarRegistracion($arrayGP)
     /* array de errores */
     $errores = [];
     if ($arrayGP) {
-
-
-
-
-        
-       
-
 
 
         /* Validacion nombre */
@@ -143,19 +221,6 @@ function validarRegistracion($arrayGP)
             }
         }
  
-
-
-
-
-
-
-        
-    
-
-
-
-
-
         /* Validacion ciudad */
         if (isset($arrayGP["ciudad"])) {
             if (empty($arrayGP["ciudad"])) {
@@ -204,5 +269,30 @@ function validarRegistracion($arrayGP)
 }
 
 
+/* Guardar en Json al validar */
+ 
+$arrayDeErrores= "";
+if ($_POST) {
+  $arrayDeErrores = validarRegistracion($_POST);
+  if (count($arrayDeErrores) === 0) {
+    $usuariofinal = [
+       "nombre"=> trim($_POST["nombre"]),
+      "apellido" => trim($_POST["apellido"]),
+      "email" => $_POST["email"],
+      "alias"  => $_POST['alias'],
+      "password" => password_hash($_POST["password"], PASSWORD_DEFAULT),
+      "ciudad" => $_POST["ciudad"],
+      "barrio" => $_POST["barrio"],
+      "postal" => $_POST["postal"],
+      "nacimiento" => $_POST["nacimiento"],
+      "pais" => $_POST["pais"],
+      "calle" => $_POST["calle"],
+      "telefono" => $_POST['telefono'],
+      "avatar"  => $_FILES['avatar']
+    ];
 
+    $jusuario = json_encode($usuariofinal);
+    file_put_contents("usuario.json", $jusuario . PHP_EOL, FILE_APPEND);
+  }
+}
  

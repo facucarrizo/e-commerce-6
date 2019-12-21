@@ -2,59 +2,6 @@
 
 require_once "funciones.php";
 require_once("arrays.php");
-pre($_POST);
-pre($_FILES);
-$arrayDeErrores= "";
-if ($_POST) {
-  $arrayDeErrores = validarRegistracion($_POST);
-  if (count($arrayDeErrores) === 0) {
-    $usuariofinal = [
-       "nombre"=> trim($_POST["nombre"]),
-      "apellido" => trim($_POST["apellido"]),
-      "email" => $_POST["email"],
-      "alias"  => $_POST['alias'],
-      "password" => password_hash($_POST["password"], PASSWORD_DEFAULT),
-      "ciudad" => $_POST["ciudad"],
-      "barrio" => $_POST["barrio"],
-      "postal" => $_POST["postal"],
-      "nacimiento" => $_POST["nacimiento"],
-      "pais" => $_POST["pais"],
-      "calle" => $_POST["calle"],
-      "telefono" => $_POST['telefono'],
-      "avatar"  => $_FILES['avatar']
-    ];
-
-    $jusuario = json_encode($usuariofinal);
-    file_put_contents("usuario.json", $jusuario . PHP_EOL, FILE_APPEND);
-  }
-}
- 
-$errores= "ok";
-if (isset($_POST['avatar'])) { 
-  $name = $_FILES['avatar']['name'];
-  $tmp_name = $_FILES ['avatar']['tmp_name'];
-  $error  = $_FILES['avatar']['error'];
-  $size = $_FILES['avatar']['size'];
-  $type = $_FILES['avatar']['type'];
-  $max_size = 1024*1024*1;
-
-  if ($error !=0 ) {
-      $errores="error, intente de nuevo";
-  }
-  elseif ($size > $max_size) {
-      $errores= "supera el limite sugerido 1MB";
-  }
-  elseif ( $type != 'image/jpeg' && $type != 'image/png') {
-      $errores= "solo admite jpg, jpeg y png";
-  }
-else {
-  $ruta = "archivos/" .$name;
-  move_uploaded_file($tmp_name, $ruta);
-  
-   }
- 
-
-}
 
 
 
@@ -85,7 +32,7 @@ else {
   <a href="Contacto.php" id="aa"> Contactanos</a>
   <!-- Header -->
 
-  <?= $errores ?>
+ 
 
   <div id="Todo">
 
@@ -166,7 +113,7 @@ else {
         </div>
         <div class="col-md-2 mb-3">
           <label for="validationDefault01">Alias</label>
-          <input type="text" name="Alias" class="form-control" id="validationDefault01" placeholder="Alias" value="<?= persistirDato($arrayDeErrores, "alias"); ?>">
+          <input type="text" name="alias" class="form-control" id="validationDefault01" placeholder="Alias" value="<?= persistirDato($arrayDeErrores, "alias"); ?>">
           <small><?= isset($arrayDeErrores["alias"]) ? $arrayDeErrores["alias"] : "" ?></small>
         </div> 
         <div class="col-md-3 mb-3">
@@ -177,9 +124,8 @@ else {
         <div class="col-md-3 mb-3">    
           <label for="avatar">Avatar</label>
           <input type="file" name="avatar" class="" id="avatar" placeholder="" value="<?= persistirDato($arrayDeErrores, "avatar"); ?>">
-          <small><?= isset($arrayDeErrores["avatar"]) ? $arrayDeErrores["avatar"]['size'] : "" ?></small>
+          <small><?= isset($errores) ? $errores : "" ?></small>
         </div>
-          
         <div class="custom-control custom-switch">
           <input type="checkbox" class="custom-control-input" id="customSwitch1" require>
           <label class="custom-control-label" for="customSwitch1" require>Tengo más de 18 años</label>

@@ -96,7 +96,7 @@ require_once('funciones.php');
                   <div class="widget-header  mr-3">
                   <a href="usuario.php" class="mr-3 icon icon-sm rounded-circle border"><img
                             class="rounded-circle img-sm bordero"
-                            src="img/avatar3.jpg"
+                            src="archivos/<?= datosUsuario('avatar')['name']?>"
                           /></i></a>
                 </div> <?php endif; ?>
                 

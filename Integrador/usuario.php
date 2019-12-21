@@ -102,7 +102,7 @@ require_once('funciones.php');
                         <div class="icon">
                           <img
                             class="rounded-circle img-sm bordero"
-                            src="img/avatar3.jpg"
+                            src="archivos/<?= datosUsuario('avatar')['name']?>"
                           />
                         </div>
                         <div class="text">
@@ -128,7 +128,6 @@ require_once('funciones.php');
                                 <thead>
                                     <tr><th>Alias</th>
                                     <th>Calles</th>
-                                    <th>Piso/dto.</th>
                                     <th>Ciudad</th>
                                                                         <!-- <th>State</th> -->
                                     <th>País</th>
@@ -141,10 +140,9 @@ require_once('funciones.php');
                                         <tr>
                                             <td><?= datosUsuario('alias'); ?></td>
                                             <td><?= datosUsuario('calle')?></td>
-                                            <td>Tte. Gral. J. D. Perón 1730</td>
-                                            <td></td>
+                                            <td><?= datosUsuario('ciudad')?></td>
                                                                                         <!-- <td></td> -->
-                                            <td>ARGENTINA</td>
+                                            <td><?= datosUsuario('pais')?></td>
                                             <td><?= datosUsuario('postal');?></td>
                                             <td><?= datosUsuario('telefono'); ?></td>
                                             <td>
