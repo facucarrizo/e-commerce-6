@@ -53,31 +53,30 @@ function persistirDato($arrayE, $campo)
 }
 
 
-
-
-
-
-
-
-/* Validaciòn Loguin */
 function validarLogin (){
     $error=[];
     if($_POST){
         if (isset($_POST['email'])) {
-            if ($_POST['email'] != datosUsuario('email')) {
+            if ($_POST['email'] = datosUsuario('email')) {
+                $_SESSION['email'] = datosUsuario('email');
+               
+          }
+            else {
                 $error['email']= "email no registrado";
-
-            } elseif (password_verify($_POST['password'], datosUsuario('password')) ==false) {
+            }
+            
+            if (password_verify($_POST['password'], datosUsuario('password')) ==false) {
                 $error['password'] = "El password ingresado es incorrecto";
             }
        }
 
        if (count($error) === 0) {
-        $_SESSION['email'] = datosUsuario('email');
+        header("location: index.php");
         if(isset($_POST['recordarme']) && $_POST['recordarme'] == "on") {
             // Unix time
             setcookie('userEmail', datosUsuario('email'), time() + 60 * 60 * 24 * 7);
             setcookie('userPass', datosUsuario('password'), time() + 60 * 60 * 24 * 7);
+            
         }
     } else {
         return $error;
@@ -85,6 +84,10 @@ function validarLogin (){
 
     }
 }
+
+
+
+
 
 
 
@@ -123,21 +126,6 @@ if($_POST){
     
     }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
