@@ -25,12 +25,12 @@ require_once('funciones.php');
     <a href="Contacto.php" id="aa" > Contactanos</a>
       <nav class=" navbar navbar-expand-lg navbar-light"
       id="inicio">
-      
+
       <h4 class=" mr-3 text-uppercase font-weight-bold" ><a href="index.php" style="color: black;text-decoration: none;">CASBUSAGI</a> </h4>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul
         class="navbar-nav mr-auto">
@@ -39,7 +39,7 @@ require_once('funciones.php');
             Hombre
           </a>
           <div class="dropdown-menu">
-            
+
             <a class="dropdown-item" href="producto-vans.php">VANS</a>
             <a class="dropdown-item" href="producto.php">NIKE</a>
             <a class="dropdown-item" href="producto-adidas.php">ADIDAS</a>
@@ -72,16 +72,16 @@ require_once('funciones.php');
                   <a class="dropdown-item" href="todos-productos.php">TODAS</a>
                 </div>
               </li>
-          
+
           </ul>
-            
-          
-          
+
+
+
           <div style="padding=5%">
               <div class="widgets-wrap float-md-right">
                 <div class="widget-header  mr-3">
                   <a href="carrito.php" class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></a>
-                  <span class=" badge-pill badge-danger notify">0</span> 
+                  <span class=" badge-pill badge-danger notify">0</span>
                 </div>
 
 
@@ -90,7 +90,7 @@ require_once('funciones.php');
                 <?php if(!isset($_FILES['avatar'])): ?>
                 <div class="widget-header  mr-3">
                   <!-- <a href="usuario.php" class="mr-3 icon icon-sm rounded-circle border"><i class="fa fa-user"></i></a> -->
-                </div> 
+                </div>
                 <?php endif; ?>
                 <?php if(isset($_SESSION['email'])): ?>
                   <div class="widget-header  mr-3">
@@ -99,7 +99,7 @@ require_once('funciones.php');
                             src="archivos/<?= datosUsuario('avatar')['name']?>"
                           /></i></a>
                 </div> <?php endif; ?>
-                
+
                 <div class="widget-header icontext">
                 <nav class="navbar navbar-expand-lg navbar-light ">
                 <?php if(!isset($_SESSION['email'])): ?>
@@ -117,11 +117,11 @@ require_once('funciones.php');
                 <?php endif; ?>
   </div>
 </div>
-                  <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bienvenido <?= datosUsuario("nombre");?></a>| 
+                  <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bienvenido <?= datosUsuario("nombre");?></a>|
                    <div class="dropdown-menu">
                   <a class="dropdown-item" href="usuario.php">VANS</a>
                   <a class="dropdown-item" href="producto.php">NIKE</a>
-                  
+
                   </div> -->
                 <?php endif; ?>
                 <!-- <div class="widget-header  mr-3">
@@ -136,7 +136,7 @@ require_once('funciones.php');
                 <a class=" mr-2" id="sesion" href="login.php" role="button">Inicio de Sesion</a>
                 | <a  class="  mr-2" style="padding-left: 2%;" id="sesion" href="Formulario Registro.php" role="button">Registrarme</a>
                 <?php endif; ?>
-                 <!-- if(isset($_SESSION['email'])): 
+                 <!-- if(isset($_SESSION['email'])):
                   <a class=" mr-2" style="padding-left:1em; padding-top:1%; text-decoration: none;" id="sesion2" href="logout.php" role="button">Cerrar Sesion</a>
                  endif;  -->
             </div>
@@ -145,12 +145,10 @@ require_once('funciones.php');
               </div>
                 </div>
                 </div>
-                
-                
+
+
               </div>
-             
+
         </div>
     </body>
     </html>
-   
-

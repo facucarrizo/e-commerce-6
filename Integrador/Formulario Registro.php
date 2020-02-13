@@ -1,9 +1,26 @@
 <?php
 
-require_once "funciones.php";
+//require_once "funciones.php";
 require_once("arrays.php");
+require_once("UsuarioControlador.php");
 
+$errores = usuarioControlador::validarRegistro();
+if ($errores === 0 ){
 
+  if (usuarioControlador::registrar($_POST['name'],$_POST['apellido'], $_POST['pais'],$_POST['nacimiento'],$_POST['email'], $_POST['alias'],$_POST['ciudad'],$_POST['calle'],$_POST['telefono'],$_POST['password'], $_POST['barrio'],$_POST['avatar'], $_POST['fechaRegistro'])) {
+      $usuario             = UsuarioControlador::getUsuario($_POST['email'], $_POST['password']);
+      $_SESSION["usuario"] = array(
+          "nombre"     => $usuario->getNombre(),
+          "usuario"    => $usuario->getUsuario(),
+          "email"      => $usuario->getEmail()
+      );
+persona::registrar($_SESSION['usuario']);
+  }
+  else {
+
+ }
+}
+var_dump($_SESSION['usuario']);
 
 ?>
 
@@ -32,7 +49,7 @@ require_once("arrays.php");
   <a href="Contacto.php" id="aa"> Contactanos</a>
   <!-- Header -->
 
- 
+
 
   <div id="Todo">
 
@@ -41,29 +58,29 @@ require_once("arrays.php");
       <div class="form-row">
         <div class="col-md-2 mb-3">
           <label for="validationDefault01">Nombre</label>
-          <input type="text" name="nombre" class="form-control" id="validationDefault01" placeholder="Nombre" value="<?= persistirDato($arrayDeErrores, "nombre"); ?>">
-          <small><?= isset($arrayDeErrores["nombre"]) ? $arrayDeErrores["nombre"] : "" ?></small>
+          <input type="text" name="nombre" class="form-control" id="validationDefault01" placeholder="Nombre" value="<?= usuarioControlador::persistirDato($errores, "nombre"); ?>">
+          <small><?= isset(usuarioControlador::validarRegistro()['nombre']) ? usuarioControlador::validarRegistro()['nombre'] : "" ?></small>
         </div>
         <div class="col-md-2 mb-3">
           <label for="validationDefault02">Apellido</label>
-          <input type="text" name="apellido" class="form-control" id="validationDefault02" placeholder="Apellido" value="<?= persistirDato($arrayDeErrores, 'apellido'); ?>">
-          <small><?= isset($arrayDeErrores["apellido"]) ? $arrayDeErrores["apellido"] : "" ?></small>
+          <input type="text" name="apellido" class="form-control" id="validationDefault02" placeholder="Apellido" value="<?= usuarioControlador::persistirDato($errores, 'apellido'); ?>">
+          <small><?= isset(usuarioControlador::validarRegistro()['apellido']) ? usuarioControlador::validarRegistro()['apellido'] : "" ?></small>
         </div>
         <div class="col-md-3 mb-3">
           <label for="validationDefault01">Email</label>
-          <input type="email" name="email" class="form-control" id="validationDefault01" placeholder="Email" value="<?= persistirDato($arrayDeErrores, 'email'); ?>">
-          <small><?= isset($arrayDeErrores["email"]) ? $arrayDeErrores["email"] : "" ?></small>
+          <input type="email" name="email" class="form-control" id="validationDefault01" placeholder="Email" value="<?= usuarioControlador::persistirDato($errores, 'email'); ?>">
+          <small><?= isset(usuarioControlador::validarRegistro()['email']) ? usuarioControlador::validarRegistro()['email'] : "" ?></small>
         </div>
 
         <div class="col-md-2 mb-3">
           <label for="validationDefault01">Contraseña</label>
-          <input type="password" name="password" class="form-control" id="validationDefault01" placeholder="Contraseña" value="<?= persistirDato($arrayDeErrores, 'password'); ?>">
-          <small><?= isset($arrayDeErrores["password"]) ? $arrayDeErrores["password"] : "" ?></small>
+          <input type="password" name="password" class="form-control" id="validationDefault01" placeholder="Contraseña" value="<?= usuarioControlador::persistirDato($errores, 'password'); ?>">
+          <small><?= isset(usuarioControlador::validarRegistro()['password']) ? usuarioControlador::validarRegistro()['password'] : "" ?></small>
         </div>
         <div class="col-md-2 mb-3">
           <label for="validationDefaultUsername">Repetir Contraseña</label>
-          <input type="password" name="repassword" class="form-control" id="validationDefaultUsername" placeholder="Contraseña" aria-describedby="inputGroupPrepend2" value="<?= persistirDato($arrayDeErrores, 'repassword'); ?>">
-          <small><?= isset($arrayDeErrores["repassword"]) ? $arrayDeErrores["repassword"] : "" ?></small>
+          <input type="password" name="repassword" class="form-control" id="validationDefaultUsername" placeholder="Contraseña" aria-describedby="inputGroupPrepend2" value="<?= usuarioControlador::persistirDato($errores, 'repassword'); ?>">
+          <small><?= isset(usuarioControlador::validarRegistro()['repassword']) ? usuarioControlador::validarRegistro()['repassword'] : "" ?></small>
 
         </div>
       </div>
@@ -74,7 +91,7 @@ require_once("arrays.php");
           <label for="country_id">Pais </label>
           <select name="country_id" id="country_id" class="form-control select2 select2-hidden-accessible" data-select2-id="country_id" tabindex="-1" aria-hidden="true">
             <option selected="selected" value="10" data-select2-id="12">ARGENTINA</option>
-            <?php 
+            <?php
             $i=1;
             $e=3;
             foreach ($paises as $nombres) {
@@ -88,49 +105,49 @@ require_once("arrays.php");
 
         <div class="col-md-2 mb-3">
           <label for="validationDefault03">Ciudad</label>
-          <input type="text" class="form-control" id="validationDefault03" placeholder="Ciudad" name="ciudad" value="<?= persistirDato($arrayDeErrores, 'ciudad'); ?>">
-          <small><?= isset($arrayDeErrores["ciudad"]) ? $arrayDeErrores["ciudad"] : "" ?></small>
+          <input type="text" class="form-control" id="validationDefault03" placeholder="Ciudad" name="ciudad" value="<?= usuarioControlador::persistirDato($errores, 'ciudad'); ?>">
+          <small><?= isset(usuarioControlador::validarRegistro()['ciudad']) ? usuarioControlador::validarRegistro()['ciudad'] : "" ?></small>
         </div>
         <div class="col-md-3 mb-3">
           <label for="validationDefault04">Barrio</label>
-          <input type="text" class="form-control" id="validationDefault04" placeholder="Barrio" name="barrio" value="<?= persistirDato($arrayDeErrores, 'barrio'); ?>">
-          <small><?= isset($arrayDeErrores["barrio"]) ? $arrayDeErrores["barrio"] : "" ?></small>
+          <input type="text" class="form-control" id="validationDefault04" placeholder="Barrio" name="barrio" value="<?= persistirDato($errores, 'barrio'); ?>">
+          <small><?= isset(usuarioControlador::validarRegistro()['barrio']) ? usuarioControlador::validarRegistro()['barrio'] : "" ?></small>
         </div>
         <div class="col-md-2 mb-3">
           <label for="validationDefault05">Codigo Postal</label>
-          <input type="number" min="1000" max="9999" class="form-control" id="validationDefault05" placeholder="Codigo Postal" name="postal" value="<?= persistirDato($arrayDeErrores, 'postal'); ?>">
-          <small><?= isset($arrayDeErrores["postal"]) ? $arrayDeErrores["postal"] : "" ?></small>
+          <input type="number" min="1000" max="9999" class="form-control" id="validationDefault05" placeholder="Codigo Postal" name="postal" value="<?= usuarioControlador::persistirDato($errores, 'postal'); ?>">
+          <small><?= isset(usuarioControlador::validarRegistro()['postal']) ? usuarioControlador::validarRegistro()['postal'] : "" ?></small>
         </div>
         <div class="col-md-2 mb-3">
           <label for="validationDefault01">Calle - Altura</label>
-          <input type="text" name="calle" class="form-control" id="validationDefault01" placeholder="calle" value="<?= persistirDato($arrayDeErrores, "calle"); ?>">
-          <small><?= isset($arrayDeErrores["calle"]) ? $arrayDeErrores["calle"] : "" ?></small>
+          <input type="text" name="calle" class="form-control" id="validationDefault01" placeholder="calle" value="<?= usuarioControlador::persistirDato($errores, "calle"); ?>">
+          <small><?= isset(usuarioControlador::validarRegistro()['calle']) ? usuarioControlador::validarRegistro()['calle'] : "" ?></small>
         </div>
         <div class="col-md-2 mb-3">
           <label for="validationDefault05">Año de Nacimiento</label>
-          <input type="number" min="1950" max="2019" class="form-control" id="validationDefault05" placeholder="2000" name="nacimiento" value="<?= persistirDato($arrayDeErrores, 'nacimiento'); ?>">
-          <small><?= isset($arrayDeErrores["nacimiento"]) ? $arrayDeErrores["nacimiento"] : "" ?></small>
+          <input type="number" min="1950" max="2019" class="form-control" id="validationDefault05" placeholder="2000" name="nacimiento" value="<?= usuarioControlador::persistirDato($errores, 'nacimiento'); ?>">
+          <small><?= isset(usuarioControlador::validarRegistro()['nacimiento']) ? usuarioControlador::validarRegistro()['nacimiento'] : "" ?></small>
         </div>
         <div class="col-md-2 mb-3">
           <label for="validationDefault01">Alias</label>
-          <input type="text" name="alias" class="form-control" id="validationDefault01" placeholder="Alias" value="<?= persistirDato($arrayDeErrores, "alias"); ?>">
-          <small><?= isset($arrayDeErrores["alias"]) ? $arrayDeErrores["alias"] : "" ?></small>
-        </div> 
+          <input type="text" name="alias" class="form-control" id="validationDefault01" placeholder="Alias" value="<?= usuarioControlador::persistirDato($errores, "alias"); ?>">
+          <small><?= isset(usuarioControlador::validarRegistro()['alias']) ? usuarioControlador::validarRegistro()['alias'] : "" ?></small>
+        </div>
         <div class="col-md-3 mb-3">
           <label for="validationDefault01">Teléfono</label>
-          <input type="number"  name="telefono" class="form-control" id="validationDefault01" placeholder="Teléfono" value="<?= persistirDato($arrayDeErrores, "telefono"); ?>">
-          <small><?= isset($arrayDeErrores["telefono"]) ? $arrayDeErrores["telefono"] : "" ?></small>
+          <input type="number"  name="telefono" class="form-control" id="validationDefault01" placeholder="Teléfono" value="<?= usuarioControlador::persistirDato($errores, "telefono"); ?>">
+          <small><?= isset(usuarioControlador::validarRegistro()['telefono']) ? usuarioControlador::validarRegistro()['telefono'] : "" ?></small>
         </div>
-        <div class="col-md-3 mb-3">    
+        <div class="col-md-3 mb-3">
           <label for="avatar">Avatar</label>
-          <input type="file" name="avatar" class="" id="avatar" placeholder="" value="<?= persistirDato($arrayDeErrores, "avatar"); ?>">
-          <small><?= isset($errores) ? $errores : "" ?></small>
+          <input type="file" name="avatar" class="" id="avatar" placeholder="" value="<?= usuarioControlador::persistirDato($errores, "avatar"); ?>">
+          <small><?= isset(usuarioControlador::validarRegistro()['img']) ? usuarioControlador::validarRegistro()['img'] : "" ?></small>
         </div>
         <div class="custom-control custom-switch">
           <input type="checkbox" class="custom-control-input" id="customSwitch1" require>
           <label class="custom-control-label" for="customSwitch1" require>Tengo más de 18 años</label>
         </div>
-        
+
 
       </div>
       <div class="form-group">
