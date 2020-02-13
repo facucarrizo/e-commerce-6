@@ -20,7 +20,8 @@ persona::registrar($_SESSION['usuario']);
 
  }
 }
-var_dump($_SESSION['usuario']);
+var_dump($errores); 
+var_dump($_SESSION);
 
 ?>
 

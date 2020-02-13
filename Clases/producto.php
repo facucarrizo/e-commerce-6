@@ -1,7 +1,7 @@
 <?php
 abstract class Producto {
-protected $nombre;
-protected $marca;
+protected $producto_nombre;
+protected $idmarca;
 protected $precio;
 protected $descripcion;
 protected $categoria;

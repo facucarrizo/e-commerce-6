@@ -53,7 +53,7 @@ function persistirDato($arrayE, $campo)
 }
 
 
-function validarLogin (){
+/*function validarLogin (){
     $error=[];
     if($_POST){
         if (isset($_POST['email'])) {

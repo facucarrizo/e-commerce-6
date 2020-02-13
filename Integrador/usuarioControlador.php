@@ -177,7 +177,7 @@ class UsuarioControlador
 
         }
 
-        if (count($errores) === 0) {
+       /* if (count($errores) === 0) {
             header("location:pag registro.php");
 
             $query = "INSERT INTO usuarios (null,nombre,apellido,email,pass) VALUES (:nombre,:apellido,:email,:pass)";
@@ -199,7 +199,7 @@ class UsuarioControlador
             return false;
         } else {
             return $errores;
-        }
+        }*/
 
   }
  }
