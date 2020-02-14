@@ -1,10 +1,13 @@
 <?php
+include("classConexion.php");
 include("persona.php");
+include("ClassUsuario.php");
 
 class UsuarioControlador
 {
   public function registrar($nombre,$apellido,$pais,$nacimiento,$email,$alias,$ciudad,$calle,$telefono,$password,$barrio,$postal,$avatar,$fechaRegistro )
   {
+
       $obj_usuario = new Usuario();
       $obj_usuario->setNombre($nombre);
       $obj_usuario->setApellido($apellido);

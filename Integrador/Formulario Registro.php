@@ -2,27 +2,9 @@
 
 //require_once "funciones.php";
 require_once("arrays.php");
-require_once("UsuarioControlador.php");
+require_once("usuarioControlador.php");
 
-$errores = usuarioControlador::validarRegistro();
-if ($errores === 0 ){
-
-  if (usuarioControlador::registrar($_POST['name'],$_POST['apellido'], $_POST['pais'],$_POST['nacimiento'],$_POST['email'], $_POST['alias'],$_POST['ciudad'],$_POST['calle'],$_POST['telefono'],$_POST['password'], $_POST['barrio'],$_POST['avatar'], $_POST['fechaRegistro'])) {
-      $usuario             = UsuarioControlador::getUsuario($_POST['email'], $_POST['password']);
-      $_SESSION["usuario"] = array(
-          "nombre"     => $usuario->getNombre(),
-          "usuario"    => $usuario->getUsuario(),
-          "email"      => $usuario->getEmail()
-      );
-persona::registrar($_SESSION['usuario']);
-  }
-  else {
-
- }
-}
-var_dump($errores); 
-var_dump($_SESSION);
-
+$errores = UsuarioControlador::validarRegistro();
 ?>
 
 <!DOCTYPE html>
@@ -54,7 +36,7 @@ var_dump($_SESSION);
 
   <div id="Todo">
 
-    <form method="post" action="" enctype="multipart/form-data">
+    <form method="post" action="pag registro.php" enctype="multipart/form-data">
       <div id="titulo">Crear Cuenta</div>
       <div class="form-row">
         <div class="col-md-2 mb-3">

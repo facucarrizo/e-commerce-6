@@ -1,6 +1,6 @@
 <?php
-include 'classConexion.php';
-include 'ClassUsuario.php';
+
+
  class Persona extends Conexion
  {
 
@@ -42,32 +42,48 @@ include 'ClassUsuario.php';
 
 public static function registrar($usuario)
 {
-    $query = "INSERT INTO usuarios (nombre,apellido,pais,nacimiento,email,alias,ciudad,calle,telefono,password,barrio,postal,avatar,fechaRegistro) VALUES (:nombre,:apellido,:pais,:nacimiento,:email,:alias,:ciudad,:calle,:telefono,:password,:barrio,:postal,:avatar,:fechaRegistro)";
 
-    self::getConexion();
 
-    $resultado = self::$cnx->prepare($query);
+  $usuario =
+  $conexion = classConexion::conectar();
+  $sql = "INSERT INTO usuarios (nombre,apellido,pais,nacimiento,email,alias,ciudad,calle,telefono,password,barrio,postal,avatar,fechaRegistro)
+                  VALUES (NULL, :nombre,:apellido,:pais,:nacimiento,:email,:alias,:ciudad,:calle,:telefono,:password,:barrio,:postal,:avatar,:fechaRegistro)";
+  $stmt = $conexion->prepare($sql);
+  $stmt->bindValue(":nombre", $usuario->getNombre());
+  $stmt->bindValue(":apellido", $usuario->getApellido());
+  $stmt->bindValue(":pais", $usuario->getPais());
+  $stmt->bindValue(":nacimiento", $usuario->getNacimiento());
+  $stmt->bindValue(":email", $usuario->getEmail());
+  $stmt->bindValue(":alias", $usuario->getAlias());
+  $stmt->bindValue(":ciudad", $usuario->getCiudad());
+  $stmt->bindValue(":calle", $usuario->getCalle());
+  $stmt->bindValue(":telefono", $usuario->getTelefono());
+  $stmt->bindValue(":password", $usuario->getPassword());
+  $stmt->bindValue(":barrio", $usuario->getBarrio());
+  $stmt->bindValue(":postal", $usuario->getPostal());
+  $stmt->bindValue(":avatar", $usuario->getAvatar());
+  $stmt->bindValue(":fechaRegistro", $usuario->getFechaRegistro());
 
-    $resultado->bindValue(":nombre", $usuario->getNombre());
-    $resultado->bindValue(":apellido", $usuario->getApellido());
-    $resultado->bindValue(":pais", $usuario->getPais());
-    $resultado->bindValue(":nacimiento", $usuario->getNacimiento());
-    $resultado->bindValue(":email", $usuario->getEmail());
-    $resultado->bindValue(":alias", $usuario->getAlias());
-    $resultado->bindValue(":ciudad", $usuario->getCiudad());
-    $resultado->bindValue(":calle", $usuario->getCalle());
-    $resultado->bindValue(":telefono", $usuario->getTelefono());
-    $resultado->bindValue(":password", $usuario->getPassword());
-    $resultado->bindValue(":barrio", $usuario->getBarrio());
-    $resultado->bindValue(":postal", $usuario->getPostal());
-    $resultado->bindValue(":avatar", $usuario->getAvatar());
-    $resultado->bindValue(":fechaRegistro", $usuario->getFechaRegistro());
+  if( $stmt->execute() ){
+      $this->setNombre($nombre);
+      $this->setApellido($apellido);
+      $this->setPais($pais);
+      $this->setNacimiento($nacimiento);
+      $this->setEmail($email);
+      $this->setAlias($alias);
+      $this->setCiudad($ciudad);
+      $this->setCalle($calle);
+      $this->setTelefono($telefono);
+      $this->setPassword($password);
+      $this->setBarrio($barrio);
+      $this->setPostal($postal);
+      $this->setAvatar($avatar);
+      $this->setFechaRegistro($fechaRegistro);
+      $this->setId($conexion->lastInsertId());
+      return true;
+  }
+  return false;
 
-    if ($resultado->execute()) {
-        return true;
-    }
-
-    return false;
 }
 
 

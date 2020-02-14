@@ -1,4 +1,22 @@
+<?php
+require_once("UsuarioControlador.php");
 
+$errores = UsuarioControlador::validarRegistro();
+if ($errores === 0 ){
+
+  if (UsuarioControlador::registrar($_POST['name'],$_POST['apellido'], $_POST['pais'],$_POST['nacimiento'],$_POST['email'], $_POST['alias'],$_POST['ciudad'],$_POST['calle'],$_POST['telefono'],$_POST['password'], $_POST['barrio'],$_POST['avatar'], $_POST['fechaRegistro'])) {
+      $usuario             = UsuarioControlador::getUsuario($_POST['email'], $_POST['password']);
+      $_SESSION["usuario"] = array(
+          "nombre"     => $usuario->getNombre(),
+          "usuario"    => $usuario->getUsuario(),
+          "email"      => $usuario->getEmail()
+      );
+persona::registrar($_SESSION['usuario']);
+  }
+  else {
+
+ }
+} ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
