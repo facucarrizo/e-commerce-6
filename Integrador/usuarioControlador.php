@@ -1,14 +1,14 @@
 <?php
 include("classConexion.php");
-include("persona.php");
 include("ClassUsuario.php");
 
 class UsuarioControlador
 {
-  public function registrar($nombre,$apellido,$pais,$nacimiento,$email,$alias,$ciudad,$calle,$telefono,$password,$barrio,$postal,$avatar,$fechaRegistro )
+  
+  public function registrar($nombre,$apellido,$pais ,$nacimiento,$email,$alias,$ciudad,$calle,$telefono,$password,$barrio,$postal )
   {
 
-      $obj_usuario = new Usuario();
+      $obj_usuario = new Persona();
       $obj_usuario->setNombre($nombre);
       $obj_usuario->setApellido($apellido);
       $obj_usuario->setPais($pais);
@@ -16,27 +16,28 @@ class UsuarioControlador
       $obj_usuario->setEmail($email);
       $obj_usuario->setAlias($alias);
       $obj_usuario->setCiudad($ciudad);
-      $obj_usuario->setCalle($telefono);
+      $obj_usuario->setCalle($calle);
+      $obj_usuario->setTelefono($telefono);
       $obj_usuario->setPassword($password);
       $obj_usuario->setBarrio($barrio);
       $obj_usuario->setPostal($postal);
-      $obj_usuario->setAvatar($avatar);
-      $obj_usuario->setFechaRegistro($fechaRegistro);
+      //$obj_usuario->setAvatar($avatar);
+      //$obj_usuario->setFechaRegistro($fechaRegistro);
 
 
-      return Persona::registrar($obj_usuario);
+      return Usuario::registrar($obj_usuario);
   }
-  public static function login($usuario, $password)
+  public static function login($email, $password)
   {
-      $obj_usuario = new Usuario();
-      $obj_usuario->setUsuario($usuario);
+      $obj_usuario = new Persona();
+      $obj_usuario->setEmail($email);
       $obj_usuario->setPassword($password);
 
-      return UsuarioDao::login($obj_usuario);
+      return Usuario::login($obj_usuario);
   }
   public function getUsuario($usuario, $password)
   {
-      $obj_usuario = new Usuario();
+      $obj_usuario = new Persona();
       $obj_usuario->setUsuario($usuario);
       $obj_usuario->setPassword($password);
 
@@ -179,33 +180,18 @@ class UsuarioControlador
            }
 
         }
-
-       /* if (count($errores) === 0) {
+        if ($errores === 0){
             header("location:pag registro.php");
-
-            $query = "INSERT INTO usuarios (null,nombre,apellido,email,pass) VALUES (:nombre,:apellido,:email,:pass)";
-
-            self::getConexion();
-
-            $resultado = self::$cnx->prepare($query);
-
-            $resultado->bindValue(":nombre", $usuario->getNombre());
-            $resultado->bindValue(":email", $usuario->getEmail());
-            $resultado->bindValue(":usuario", $usuario->getUsuario());
-            $resultado->bindValue(":password", $usuario->getPassword());
-            $resultado->bindValue(":privilegio", $usuario->getPrivilegio());
-
-            if ($resultado->execute()) {
-                return true;
-            }
-
-            return false;
-        } else {
+        }
+        else {
             return $errores;
-        }*/
-
+        }
   }
+
  }
+
+
+
  function persistirDato($arrayE, $campo)
  {
      if (isset($arrayE[$campo])) {

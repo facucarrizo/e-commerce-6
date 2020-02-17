@@ -108,7 +108,7 @@ require_once('funciones.php');
                 <?php if(isset($_SESSION['email'])): ?>
                   <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="a" data-toggle="dropdown" aria-haspopup="true"  style="text-transform: capitalize;font-size: 20px;" aria-expanded="false">
-  Bienvenido <?= datosUsuario("nombre");?>
+  Bienvenide! <?= $_SESSION['alias'];?>
                 </a>
   <div class="dropdown-menu" style="text-shadow: none;"  aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" style="color:black;" href="usuario.php">Mi usuario</a>

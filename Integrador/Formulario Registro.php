@@ -2,9 +2,10 @@
 
 //require_once "funciones.php";
 require_once("arrays.php");
-require_once("usuarioControlador.php");
+require_once("UsuarioControlador.php");
 
-$errores = UsuarioControlador::validarRegistro();
+$errores = usuarioControlador::validarRegistro();
+
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +37,7 @@ $errores = UsuarioControlador::validarRegistro();
 
   <div id="Todo">
 
-    <form method="post" action="pag registro.php" enctype="multipart/form-data">
+    <form method="post" <?php if($errores == 0):?> action="pag registro.php" <?php endif; ?> enctype="multipart/form-data">
       <div id="titulo">Crear Cuenta</div>
       <div class="form-row">
         <div class="col-md-2 mb-3">
@@ -71,15 +72,14 @@ $errores = UsuarioControlador::validarRegistro();
       <div class="form-row">
         <!-- <div class="form-row"> -->
         <div class="col-md-2 mb-3">
-          <label for="country_id">Pais </label>
-          <select name="country_id" id="country_id" class="form-control select2 select2-hidden-accessible" data-select2-id="country_id" tabindex="-1" aria-hidden="true">
-            <option selected="selected" value="10" data-select2-id="12">ARGENTINA</option>
+          <label for="pais">Pais </label>
+          <select name="pais" id="country_id" class="form-control select2 select2-hidden-accessible" data-select2-id="country_id" tabindex="-1" aria-hidden="true">
+            <option selected="selected" value="ARGENTINA" data-select2-id="12">ARGENTINA</option>
             <?php
-            $i=1;
+
             $e=3;
             foreach ($paises as $nombres) {
-            echo "<option value='$i' data-select2-id='$e'>$paises[$i]</option>";
-            $i++;
+            echo "<option value='$nombres' data-select2-id='$e'>$nombres</option>";
             $e++;
             }
             ?>

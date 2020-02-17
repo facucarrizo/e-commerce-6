@@ -1,13 +1,19 @@
 <?php
 
+
 class Conexion
 {
 
-public static function conectar(){
-      try {
-        $conexion= new PDO("mysql:dbname=ecommerce;host:localhost", "root","root");
-        $conexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-    } catch (\Excepcion $e) {
-        "hubo un error en la conexion a la base de datos";
+    static function conectar(){
+        $link = new PDO(
+            'mysql:host=localhost;dbname=ecommerce',
+            'root',
+            'root',
+            $opciones = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')
+        );
+        $link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+        return $link;
     }
-} }?>
+}
+
+?>

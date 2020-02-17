@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once('funciones.php');
+var_dump($_SESSION);
 ?>
 
 <!DOCTYPE html>
