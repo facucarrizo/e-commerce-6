@@ -4,7 +4,7 @@
 
 <?php
 session_start();
-require_once('funciones.php');
+//require_once('funciones.php');
 
 ?>
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ require_once('funciones.php');
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -38,12 +38,12 @@ require_once('funciones.php');
 
   <body>
       <a href="Contacto.html" id="aa" > Contactanos</a>
-       
-      
-     
+
+
+
       <?php require_once"NAV.php" ?>
 
-      
+
 
 
 
@@ -54,7 +54,7 @@ require_once('funciones.php');
         </div>
   </section>
         <!-- container //  -->
-      
+
     <div class="mx-5">
       <section class="section-content padding-y">
         <div class="">
@@ -106,8 +106,8 @@ require_once('funciones.php');
                           />
                         </div>
                         <div class="text">
-                          <strong> <?= datosUsuario('nombre');?> </strong> <br />
-                          <?= datosUsuario('email');?><br />
+                          <strong> <?= $_SESSION["nombre"];?> </strong> <br />
+                          <?= $_SESSION['email'];?><br />
                           <a href="#" class="btn-link"> Editar</a>
                         </div>
                       </figure>
@@ -116,7 +116,7 @@ require_once('funciones.php');
                     <p>
                         <i class="fa fa-map-marker text-muted" aria-hidden="true"></i> &nbsp; Mis
                         Direcciones
-                        <br>   
+                        <br>
                     </p>
                     <div role="tabpanel" class="tab-pane" id="address">
                             <div class="row">
@@ -138,13 +138,13 @@ require_once('funciones.php');
                                 </thead>
                                 <tbody>
                                         <tr>
-                                            <td><?= datosUsuario('alias'); ?></td>
-                                            <td><?= datosUsuario('calle')?></td>
-                                            <td><?= datosUsuario('ciudad')?></td>
+                                            <td><?= $_SESSION['alias']; ?></td>
+                                            <td><?= $_SESSION['calle']?></td>
+                                            <td><?= $_SESSION['ciudad']?></td>
                                                                                         <!-- <td></td> -->
-                                            <td><?= datosUsuario('pais')?></td>
-                                            <td><?= datosUsuario('postal');?></td>
-                                            <td><?= datosUsuario('telefono'); ?></td>
+                                            <td><?= $_SESSION['pais']?></td>
+                                            <td><?= $_SESSION['postal'];?></td>
+                                            <td><?= $_SESSION['telefono']; ?></td>
                                             <td>
                                                 <form method="post" action="https://shop.laracom.net/customer/1231/address/755" class="form-horizontal">
                                                     <div class="btn-group">
@@ -388,7 +388,7 @@ require_once('funciones.php');
       <!--container.//-->
 
       <br /><br /><br />
-   </div> 
+   </div>
    </div>  <!--cierra mx-5-->
 
 

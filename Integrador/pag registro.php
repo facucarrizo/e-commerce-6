@@ -1,3 +1,12 @@
+<?php
+require_once("UsuarioControlador.php");
+require_once("ClassPersona.php");
+$objUser = UsuarioControlador::registrar($_POST['nombre'], $_POST['apellido'], $_POST['pais'],$_POST['nacimiento'], $_POST['email'],$_POST['alias'],$_POST['ciudad'], $_POST['calle'],$_POST['telefono'],$_POST['password'], $_POST['barrio'], $_POST['postal']);
+
+
+
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +34,20 @@
   <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> -->
   <hr class="my-4">
   <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
- 
+  <main class="container">
+<?php
+        $mensaje = 'No pudo registrar el Usuario';
+        $clase = 'danger';
+        if( isset($objUser) ){
+            $mensaje = 'nombre: '.$objUser->getNombre();
+            $mensaje .= ' agregada corectamente';
+            $clase = 'success';
+        }
+?>
+    <div class="alert alert-<?= $clase ?>">
+        <?= $mensaje; ?>
+    </div>
+</main>
   <a class="btn btn-danger lg" id="Boton" href="usuario.php" role="button">Mi Usuario</a>
   <br><br>
   <a class="btn btn-danger lg" id="Boton" href="index.php" role="button">Explorar</a>

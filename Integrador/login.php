@@ -1,10 +1,10 @@
 <?php
 session_start();
-require_once 'funciones.php';
+require("usuarioControlador.php");
 
 $erroresLogin= "";
 if($_POST) {
-  $erroresLogin= validarLogin();
+  $erroresLogin= usuarioControlador::login($_POST['email'], $_POST['password']);
    }
 ?>
 
@@ -18,7 +18,7 @@ if($_POST) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-<link rel="stylesheet" href="css/login.css">  
+<link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
@@ -61,8 +61,6 @@ if($_POST) {
     </small>
     </main>
     </div></div>
-    
+
 </body>
 </html>
-
-                    
